@@ -1,5 +1,6 @@
 .site-footer {
   position: relative;
+
   padding: 60px 0 25px;
 
   background: #050608;
@@ -13,6 +14,7 @@
   content: "";
 
   position: absolute;
+
   width: 500px;
   height: 300px;
 
@@ -22,18 +24,23 @@
   transform: translateX(-50%);
 
   background: var(--color-blue);
+
   filter: blur(150px);
+
   opacity: 0.18;
 
   pointer-events: none;
 }
 
+/* HEADING */
+
 .footer-heading {
   position: relative;
   z-index: 1;
 
-  text-align: center;
   margin-bottom: 40px;
+
+  text-align: center;
 }
 
 .footer-heading span {
@@ -49,19 +56,55 @@
   margin: 6px 0 0;
 
   color: var(--color-text-muted);
+
   font-size: 0.9rem;
 }
+
+/* PARTNERS */
 
 .footer-partners {
   position: relative;
   z-index: 1;
 
+  width: 100%;
+  max-width: 850px;
+
+  margin: 0 auto;
+}
+
+/* MAIN SPONSOR */
+
+.footer-main-sponsor {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  margin-bottom: 25px;
+}
+
+.footer-partner-goldbet {
+  width: 100%;
+
+  min-height: 150px;
+}
+
+.footer-partner-goldbet img {
+  max-width: 310px;
+  max-height: 130px;
+}
+
+/* SECONDARY PARTNERS */
+
+.footer-secondary-partners {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
   align-items: center;
 
-  max-width: 850px;
-  margin: 0 auto;
+  gap: 30px;
+
+  width: 100%;
 }
 
 .footer-partner {
@@ -81,19 +124,44 @@
 
 .footer-partner:hover {
   opacity: 1;
+
   transform: translateY(-6px);
+
   filter: drop-shadow(0 8px 20px rgba(255, 255, 255, 0.1));
 }
 
 .footer-partner img {
-  max-width: 170px;
-  max-height: 90px;
+  display: block;
+
+  width: auto;
+  height: auto;
+
   object-fit: contain;
 }
 
-.footer-partner-league img {
-  max-width: 105px;
+/* LEGA */
+
+.footer-partner-league {
+  justify-content: flex-start;
 }
+
+.footer-partner-league img {
+  max-width: 110px;
+  max-height: 95px;
+}
+
+/* E-RENT */
+
+.footer-partner-erent {
+  justify-content: flex-end;
+}
+
+.footer-partner-erent img {
+  max-width: 180px;
+  max-height: 90px;
+}
+
+/* FOOTER BOTTOM */
 
 .footer-bottom {
   position: relative;
@@ -116,23 +184,62 @@
   margin: 0;
 }
 
+/* MOBILE */
+
 @media (max-width: 767px) {
   .site-footer {
     padding-top: 45px;
   }
 
-  .footer-partners {
-    grid-template-columns: 1fr;
-    gap: 12px;
+  .footer-heading {
+    margin-bottom: 30px;
+  }
+
+  .footer-main-sponsor {
+    margin-bottom: 18px;
+  }
+
+  .footer-partner-goldbet {
+    min-height: 120px;
+  }
+
+  .footer-partner-goldbet img {
+    max-width: 250px;
+    max-height: 105px;
+  }
+
+  .footer-secondary-partners {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
   }
 
   .footer-partner {
-    min-height: 85px;
+    min-height: 90px;
+  }
+
+  .footer-partner-league {
+    justify-content: flex-start;
+  }
+
+  .footer-partner-league img {
+    max-width: 85px;
+    max-height: 75px;
+  }
+
+  .footer-partner-erent {
+    justify-content: flex-end;
+  }
+
+  .footer-partner-erent img {
+    max-width: 135px;
+    max-height: 75px;
   }
 
   .footer-bottom {
     flex-direction: column;
     align-items: center;
+
     gap: 8px;
 
     text-align: center;

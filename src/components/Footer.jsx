@@ -16,35 +16,39 @@ const Footer = () => {
         </div>
 
         <div className="footer-partners">
-          <a
-            href="https://galdierirent.it/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-partner footer-partner-sponsor"
-            aria-label="Visita E-Rent Car"
-          >
-            <img src={logoERent} alt="E-Rent Car" />
-          </a>
+          <div className="footer-main-sponsor">
+            <a
+              href="https://share.google/7w69ID0gr0NL5pEj1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-partner footer-partner-goldbet"
+              aria-label="Visita GoldBet Busnago"
+            >
+              <img src={logoGoldbet} alt="GoldBet Busnago" />
+            </a>
+          </div>
 
-          <a
-            href="https://www.instagram.com/legacalcioa8bergamo/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-partner footer-partner-league"
-            aria-label="Visita Lega Calcio a 8 Bergamo"
-          >
-            <img src={logoLega} alt="Lega Calcio a 8 Bergamo" />
-          </a>
+          <div className="footer-secondary-partners">
+            <a
+              href="https://www.instagram.com/legacalcioa8bergamo/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-partner footer-partner-league"
+              aria-label="Visita Lega Calcio a 8 Bergamo"
+            >
+              <img src={logoLega} alt="Lega Calcio a 8 Bergamo" />
+            </a>
 
-          <a
-            href="https://share.google/7w69ID0gr0NL5pEj1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-partner footer-partner-sponsor"
-            aria-label="Visita GoldBet Busnago"
-          >
-            <img src={logoGoldbet} alt="GoldBet Busnago" />
-          </a>
+            <a
+              href="https://galdierirent.it/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-partner footer-partner-erent"
+              aria-label="Visita E-Rent Car"
+            >
+              <img src={logoERent} alt="E-Rent Car" />
+            </a>
+          </div>
         </div>
 
         <div className="footer-bottom">
