@@ -1,14 +1,22 @@
 .rosa-page {
   min-height: 100vh;
+  overflow: hidden;
 }
+
+/* HERO */
 
 .rosa-hero {
   position: relative;
 
-  padding: 110px 0 90px;
+  padding: 120px 0 100px;
 
   background:
-    radial-gradient(circle at 85% 40%, rgba(0, 0, 254, 0.2), transparent 35%),
+    radial-gradient(circle at 85% 30%, rgba(0, 0, 254, 0.2), transparent 35%),
+    radial-gradient(
+      circle at 10% 80%,
+      rgba(177, 162, 1, 0.07),
+      transparent 30%
+    ),
     var(--color-bg);
 
   border-bottom: 1px solid var(--color-border);
@@ -17,32 +25,37 @@
 }
 
 .rosa-hero::after {
-  content: "FRANUZZI";
+  content: "TEAM";
 
   position: absolute;
+
   right: -30px;
-  bottom: -40px;
+  bottom: -45px;
 
   color: transparent;
 
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.04);
 
   font-family: var(--font-heading);
-  font-size: clamp(6rem, 15vw, 13rem);
+  font-size: clamp(7rem, 18vw, 15rem);
   font-weight: 700;
+  line-height: 1;
 
   pointer-events: none;
 }
 
 .rosa-kicker {
+  position: relative;
+  z-index: 1;
+
   display: block;
 
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 
   color: var(--color-yellow);
 
   font-family: var(--font-heading);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.22em;
 
@@ -58,22 +71,32 @@
   font-family: var(--font-heading);
   font-size: clamp(4rem, 10vw, 8rem);
   font-weight: 700;
-  line-height: 0.82;
+  line-height: 0.84;
   letter-spacing: -0.07em;
 
   animation: fadeUp 0.7s 0.08s ease both;
 }
 
 .rosa-hero h1 span {
-  color: var(--yellow, var(--color-yellow));
+  color: transparent;
+
+  -webkit-text-stroke: 2px var(--color-blue-light);
+
+  text-shadow: 0 0 45px rgba(0, 0, 254, 0.25);
 }
 
 .rosa-hero p {
-  margin: 30px 0 0;
+  position: relative;
+  z-index: 1;
+
+  max-width: 550px;
+
+  margin: 32px 0 0;
 
   color: var(--color-text-muted);
 
   font-size: 1.05rem;
+  line-height: 1.7;
 
   animation: fadeUp 0.7s 0.16s ease both;
 }
@@ -82,6 +105,8 @@
 
 .rosa-content {
   padding: 100px 0 130px;
+
+  background: var(--color-bg);
 }
 
 .rosa-role-section + .rosa-role-section {
@@ -98,17 +123,18 @@
 .rosa-role-header h2 {
   margin: 0;
 
+  color: var(--color-white);
+
   font-family: var(--font-heading);
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   font-weight: 700;
   letter-spacing: -0.03em;
-
-  color: var(--color-white);
 }
 
 .rosa-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+
   gap: 22px;
 }
 
@@ -134,6 +160,7 @@
   content: "";
 
   position: absolute;
+
   inset: 0;
 
   border: 1px solid transparent;
@@ -147,8 +174,11 @@
   border-color: rgba(177, 162, 1, 0.65);
 }
 
+/* PLAYER IMAGE */
+
 .player-image {
   position: absolute;
+
   inset: 0;
 
   width: 100%;
@@ -172,23 +202,35 @@
 
 .player-card:hover .player-image-primary {
   opacity: 0;
+
   transform: scale(1.04);
 }
 
 .player-card:hover .player-image-secondary {
   opacity: 1;
+
   transform: scale(1.04);
 }
+
+/* IMAGE OVERLAY */
 
 .player-image-overlay {
   position: absolute;
   z-index: 2;
+
   inset: 0;
 
-  background: linear-gradient(to top, rgba(5, 6, 8, 0.85) 0%, transparent 40%);
+  background: linear-gradient(
+    to top,
+    rgba(5, 6, 8, 0.85) 0%,
+    rgba(5, 6, 8, 0.25) 25%,
+    transparent 45%
+  );
 
   pointer-events: none;
 }
+
+/* PLAYER NUMBER */
 
 .player-number {
   position: absolute;
@@ -205,7 +247,19 @@
   line-height: 1;
 
   text-shadow: 0 5px 20px rgba(0, 0, 0, 0.45);
+
+  transition:
+    color var(--transition-normal),
+    transform var(--transition-normal);
 }
+
+.player-card:hover .player-number {
+  color: var(--color-yellow-light);
+
+  transform: translateY(-3px);
+}
+
+/* PLAYER ROLE */
 
 .player-role {
   position: absolute;
@@ -224,6 +278,8 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
+
+/* PLAYER INFO */
 
 .player-info {
   padding: 18px 2px 0;
@@ -267,7 +323,10 @@
   color: var(--color-text-muted);
 
   font-size: 0.9rem;
+  line-height: 1.6;
 }
+
+/* TABLET */
 
 @media (max-width: 991px) {
   .rosa-grid {
@@ -275,9 +334,18 @@
   }
 }
 
+/* MOBILE */
+
 @media (max-width: 575px) {
   .rosa-hero {
-    padding: 80px 0 65px;
+    padding: 80px 0 70px;
+  }
+
+  .rosa-hero::after {
+    right: -15px;
+    bottom: -20px;
+
+    font-size: clamp(6rem, 32vw, 10rem);
   }
 
   .rosa-content {
@@ -288,7 +356,25 @@
     margin-top: 75px;
   }
 
+  .rosa-role-header {
+    margin-bottom: 24px;
+  }
+
   .rosa-grid {
     grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .player-number {
+    right: 15px;
+    bottom: 13px;
+
+    font-size: 2.8rem;
+  }
+
+  .player-role {
+    left: 15px;
+    bottom: 15px;
   }
 }
