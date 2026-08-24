@@ -1,0 +1,142 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: rgba(8, 9, 13, 0.82);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.franuzzi-navbar {
+  min-height: var(--header-height);
+  padding: 8px 0;
+}
+
+.franuzzi-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+}
+
+.franuzzi-brand-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+
+  transition:
+    transform var(--transition-normal),
+    filter var(--transition-normal);
+}
+
+.franuzzi-brand:hover .franuzzi-brand-logo {
+  transform: rotate(-4deg) scale(1.06);
+  filter: drop-shadow(0 0 12px rgba(0, 0, 254, 0.7));
+}
+
+.franuzzi-brand-text {
+  display: flex;
+  flex-direction: column;
+
+  font-family: var(--font-heading);
+  line-height: 1;
+}
+
+.franuzzi-brand-text span {
+  color: var(--color-text-muted);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+}
+
+.franuzzi-brand-text strong {
+  color: var(--color-white);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+}
+
+.franuzzi-nav {
+  gap: 8px;
+}
+
+.franuzzi-nav .nav-link {
+  position: relative;
+
+  padding: 10px 14px !important;
+
+  color: var(--color-text-muted);
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  transition:
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.franuzzi-nav .nav-link::after {
+  content: "";
+
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 4px;
+
+  height: 2px;
+
+  background: var(--color-yellow);
+
+  transform: scaleX(0);
+  transform-origin: center;
+
+  transition: transform var(--transition-normal);
+}
+
+.franuzzi-nav .nav-link:hover {
+  color: var(--color-white);
+  transform: translateY(-1px);
+}
+
+.franuzzi-nav .nav-link:hover::after,
+.franuzzi-nav .nav-link.active::after {
+  transform: scaleX(1);
+}
+
+.franuzzi-nav .nav-link.active {
+  color: var(--color-white);
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 254, 0.25);
+}
+
+@media (max-width: 991px) {
+  .franuzzi-navbar {
+    padding: 12px 0;
+  }
+
+  .navbar-collapse {
+    padding-top: 18px;
+  }
+
+  .franuzzi-nav {
+    align-items: stretch !important;
+    padding-bottom: 12px;
+  }
+
+  .franuzzi-nav .nav-link {
+    padding: 13px 4px !important;
+  }
+
+  .franuzzi-nav .nav-link::after {
+    left: 4px;
+    right: auto;
+    width: 40px;
+  }
+}

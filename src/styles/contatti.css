@@ -1,0 +1,503 @@
+.contatti-page {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* HERO */
+
+.contatti-hero {
+  position: relative;
+
+  padding: 120px 0 100px;
+
+  background:
+    radial-gradient(circle at 85% 30%, rgba(0, 0, 254, 0.2), transparent 35%),
+    radial-gradient(
+      circle at 10% 80%,
+      rgba(177, 162, 1, 0.07),
+      transparent 30%
+    ),
+    var(--color-bg);
+
+  border-bottom: 1px solid var(--color-border);
+
+  overflow: hidden;
+}
+
+.contatti-hero::after {
+  content: "FRANUZZI";
+
+  position: absolute;
+  right: -35px;
+  bottom: -45px;
+
+  color: transparent;
+
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.04);
+
+  font-family: var(--font-heading);
+  font-size: clamp(6rem, 15vw, 13rem);
+  font-weight: 700;
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+.contatti-kicker {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: var(--color-yellow);
+
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+
+  animation: fadeUp 0.6s ease both;
+}
+
+.contatti-hero h1 {
+  position: relative;
+  z-index: 1;
+
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-weight: 700;
+  line-height: 0.84;
+  letter-spacing: -0.07em;
+
+  animation: fadeUp 0.7s 0.08s ease both;
+}
+
+.contatti-hero h1 span {
+  color: transparent;
+
+  -webkit-text-stroke: 2px var(--color-blue-light);
+
+  text-shadow: 0 0 45px rgba(0, 0, 254, 0.25);
+}
+
+.contatti-hero p {
+  position: relative;
+  z-index: 1;
+
+  max-width: 560px;
+
+  margin: 32px 0 0;
+
+  color: var(--color-text-muted);
+
+  font-size: 1.05rem;
+  line-height: 1.75;
+
+  animation: fadeUp 0.7s 0.16s ease both;
+}
+
+/* SOCIAL */
+
+.contatti-social {
+  padding: 110px 0 130px;
+
+  background: var(--color-bg-soft);
+}
+
+.contatti-social-header {
+  margin-bottom: 45px;
+}
+
+.contatti-social-header > span {
+  color: var(--color-yellow);
+
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.contatti-social-header h2 {
+  margin: 8px 0 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.contatti-social-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+
+.social-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 320px;
+
+  padding: 26px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(255, 255, 255, 0.01)
+    ),
+    var(--color-surface);
+
+  border: 1px solid var(--color-border);
+
+  overflow: hidden;
+
+  animation: fadeUp 0.65s ease both;
+
+  transition:
+    transform var(--transition-normal),
+    border-color var(--transition-normal),
+    background var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+.social-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  top: -150px;
+  right: -130px;
+
+  border-radius: 50%;
+
+  background: var(--color-blue);
+
+  filter: blur(65px);
+  opacity: 0.12;
+
+  transition:
+    opacity var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.social-card::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: var(--color-yellow);
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform var(--transition-normal);
+}
+
+.social-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(177, 162, 1, 0.4);
+
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.25);
+}
+
+.social-card:hover::before {
+  opacity: 0.25;
+
+  transform: scale(1.4);
+}
+
+.social-card:hover::after {
+  transform: scaleX(1);
+}
+
+.social-card-top {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* SOCIAL ICON */
+
+.social-icon {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 58px;
+  height: 58px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+
+  color: var(--color-white);
+
+  font-size: 1.7rem;
+
+  transition:
+    transform var(--transition-normal),
+    background var(--transition-normal),
+    color var(--transition-normal),
+    border-color var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+.social-card:hover .social-icon {
+  transform: translateY(-4px) scale(1.06);
+}
+
+/* ARROW */
+
+.social-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+
+  color: var(--color-white);
+
+  font-size: 1.1rem;
+
+  transition:
+    transform var(--transition-normal),
+    background var(--transition-normal),
+    color var(--transition-normal),
+    border-color var(--transition-normal);
+}
+
+.social-card:hover .social-arrow {
+  transform: rotate(45deg);
+
+  background: var(--color-yellow);
+  color: #050505;
+
+  border-color: var(--color-yellow);
+}
+
+/* CARD CONTENT */
+
+.social-card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.social-platform {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--color-yellow);
+
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.social-card h3 {
+  margin: 0;
+
+  color: var(--color-white);
+
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+
+  overflow-wrap: anywhere;
+}
+
+/* CTA */
+
+.social-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 18px;
+
+  color: var(--color-text-muted);
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  transition: color var(--transition-normal);
+}
+
+.social-cta span {
+  color: var(--color-yellow);
+
+  transition: transform var(--transition-normal);
+}
+
+.social-card:hover .social-cta {
+  color: var(--color-white);
+}
+
+.social-card:hover .social-cta span {
+  transform: translateX(5px);
+}
+
+/* YOUTUBE */
+
+.social-card-youtube:hover {
+  background:
+    linear-gradient(145deg, rgba(255, 0, 0, 0.08), rgba(255, 255, 255, 0.01)),
+    var(--color-surface);
+}
+
+.social-card-youtube:hover .social-icon {
+  color: #ff0000;
+
+  border-color: rgba(255, 0, 0, 0.45);
+
+  background: rgba(255, 0, 0, 0.08);
+
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.12);
+}
+
+/* INSTAGRAM */
+
+.social-card-instagram:hover {
+  background:
+    linear-gradient(145deg, rgba(225, 48, 108, 0.08), rgba(0, 0, 254, 0.04)),
+    var(--color-surface);
+}
+
+.social-card-instagram:hover .social-icon {
+  color: #e1306c;
+
+  border-color: rgba(225, 48, 108, 0.45);
+
+  background: rgba(225, 48, 108, 0.08);
+
+  box-shadow: 0 0 30px rgba(225, 48, 108, 0.12);
+}
+
+/* TWITCH */
+
+.social-card-twitch:hover {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(145, 70, 255, 0.08),
+      rgba(255, 255, 255, 0.01)
+    ),
+    var(--color-surface);
+}
+
+.social-card-twitch:hover .social-icon {
+  color: #9146ff;
+
+  border-color: rgba(145, 70, 255, 0.45);
+
+  background: rgba(145, 70, 255, 0.08);
+
+  box-shadow: 0 0 30px rgba(145, 70, 255, 0.12);
+}
+
+/* CLAIM */
+
+.contatti-claim {
+  position: relative;
+
+  padding: 120px 0;
+
+  background:
+    radial-gradient(circle at center, rgba(0, 0, 254, 0.14), transparent 45%),
+    var(--color-bg);
+
+  text-align: center;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.contatti-claim-content > span {
+  color: var(--color-yellow);
+
+  font-family: var(--font-heading);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.contatti-claim h2 {
+  margin: 15px 0 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 700;
+  line-height: 0.86;
+  letter-spacing: -0.065em;
+}
+
+.contatti-claim h2 strong {
+  color: var(--color-yellow);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+  .contatti-social-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-card {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contatti-hero {
+    padding: 80px 0 70px;
+  }
+
+  .contatti-social {
+    padding: 75px 0 90px;
+  }
+
+  .contatti-claim {
+    padding: 90px 0;
+  }
+
+  .social-card {
+    min-height: 220px;
+    padding: 22px;
+  }
+
+  .social-icon {
+    width: 52px;
+    height: 52px;
+
+    font-size: 1.5rem;
+  }
+}

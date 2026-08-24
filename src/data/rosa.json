@@ -1,0 +1,128 @@
+[
+  {
+    "nome": "",
+    "cognome": "Fornasier",
+    "ruolo": "Portiere",
+    "numero": 1,
+    "descrizione": "",
+    "immagine-1": "",
+    "immagine-2": ""
+  },
+  {
+    "nome": "Giorgio",
+    "cognome": "Pesenti",
+    "ruolo": "Difensore",
+    "numero": 6,
+    "descrizione": "Capitano della Real Franuzzi",
+    "immagine-1": "giorgio-pesenti-1.webp",
+    "immagine-2": "giorgio-pesenti-2.webp"
+  },
+  {
+    "nome": "Marco",
+    "cognome": "Cammarata",
+    "ruolo": "Difensore",
+    "numero": 19,
+    "descrizione": "",
+    "immagine-1": "marco-cammarata-1.webp",
+    "immagine-2": "marco-cammarata-2.webp"
+  },
+  {
+    "nome": "Fabio",
+    "cognome": "Barbieri",
+    "ruolo": "Centrocampista",
+    "numero": 34,
+    "descrizione": "",
+    "immagine-1": "fabio-barbieri-1.webp",
+    "immagine-2": "fabio-barbieri-2.webp"
+  },
+  {
+    "nome": "Mattia",
+    "cognome": "Gargiulo",
+    "ruolo": "Centrocampista",
+    "numero": 15,
+    "descrizione": "",
+    "immagine-1": "mattia-gargiulo-1.webp",
+    "immagine-2": "mattia-gargiulo-2.webp"
+  },
+  {
+    "nome": "Yuri",
+    "cognome": "Pepe",
+    "ruolo": "Centrocampista",
+    "numero": 7,
+    "descrizione": "",
+    "immagine-1": "",
+    "immagine-2": ""
+  },
+  {
+    "nome": "Daniele",
+    "cognome": "Perego",
+    "ruolo": "Centrocampista",
+    "numero": 45,
+    "descrizione": "",
+    "immagine-1": "",
+    "immagine-2": ""
+  },
+  {
+    "nome": "Giacomo",
+    "cognome": "Lamanuzzi",
+    "ruolo": "Attaccante",
+    "numero": 9,
+    "descrizione": "",
+    "immagine-1": "",
+    "immagine-2": ""
+  },
+  {
+    "nome": "Alessandro",
+    "cognome": "Spinelli",
+    "ruolo": "Attaccante",
+    "numero": 22,
+    "descrizione": "",
+    "immagine-1": "alessandro-spinelli-1.webp",
+    "immagine-2": "alessandro-spinelli-2.webp"
+  },
+  {
+    "nome": "Stefano",
+    "cognome": "Gennari",
+    "ruolo": "Attaccante",
+    "numero": 10,
+    "descrizione": "",
+    "immagine-1": "stefano-gennari-1.webp",
+    "immagine-2": "stefano-gennari-2.webp"
+  },
+  {
+    "nome": "Francesco",
+    "cognome": "Lamanuzzi",
+    "ruolo": "Allenatore",
+    "numero": null,
+    "descrizione": "",
+    "immagine-1": "francesco-lamanuzzi-1.webp",
+    "immagine-2": "francesco-lamanuzzi-2.webp"
+  },
+  {
+    "nome": "Christian",
+    "cognome": "Lamanuzzi",
+    "ruolo": "Allenatore",
+    "numero": null,
+    "descrizione": "",
+    "immagine-1": "christian-lamanuzzi-1.webp",
+    "immagine-2": "christian-lamanuzzi-2.webp"
+  },
+  {
+    "nome": "Emanuele",
+    "cognome": "Francesconi",
+    "ruolo": "Presidente",
+    "numero": null,
+    "descrizione": "",
+    "immagine-1": "",
+    "immagine-2": ""
+  },
+  {
+    "nome": "Simone",
+    "cognome": "Visconti",
+    "ruolo": "Dirigente",
+    "numero": null,
+    "descrizione": "",
+    "immagine-1": "",
+    "immagine-2": ""
+  }
+]

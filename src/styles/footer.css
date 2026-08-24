@@ -1,0 +1,140 @@
+.site-footer {
+  position: relative;
+  padding: 60px 0 25px;
+
+  background: #050608;
+
+  border-top: 1px solid var(--color-border);
+
+  overflow: hidden;
+}
+
+.site-footer::before {
+  content: "";
+
+  position: absolute;
+  width: 500px;
+  height: 300px;
+
+  left: 50%;
+  bottom: -220px;
+
+  transform: translateX(-50%);
+
+  background: var(--color-blue);
+  filter: blur(150px);
+  opacity: 0.18;
+
+  pointer-events: none;
+}
+
+.footer-heading {
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer-heading span {
+  color: var(--color-yellow);
+
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+}
+
+.footer-heading p {
+  margin: 6px 0 0;
+
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.footer-partners {
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.footer-partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 110px;
+
+  opacity: 0.75;
+
+  transition:
+    opacity var(--transition-normal),
+    transform var(--transition-normal),
+    filter var(--transition-normal);
+}
+
+.footer-partner:hover {
+  opacity: 1;
+  transform: translateY(-6px);
+  filter: drop-shadow(0 8px 20px rgba(255, 255, 255, 0.1));
+}
+
+.footer-partner img {
+  max-width: 170px;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+.footer-partner-league img {
+  max-width: 105px;
+}
+
+.footer-bottom {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 45px;
+  padding-top: 20px;
+
+  border-top: 1px solid var(--color-border);
+
+  color: var(--color-text-muted);
+
+  font-size: 0.78rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .site-footer {
+    padding-top: 45px;
+  }
+
+  .footer-partners {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .footer-partner {
+    min-height: 85px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    text-align: center;
+  }
+}

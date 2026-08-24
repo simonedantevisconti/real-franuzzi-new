@@ -1,0 +1,37 @@
+.calendario-page {
+  display: flex;
+  align-items: center;
+
+  min-height: 70vh;
+  padding: 100px 0;
+
+  background:
+    radial-gradient(circle at 80% 20%, rgba(0, 0, 254, 0.16), transparent 35%),
+    var(--color-bg);
+}
+
+.calendario-page span {
+  color: var(--color-yellow);
+
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.calendario-page h1 {
+  margin: 10px 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(3.5rem, 9vw, 7rem);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+
+  animation: fadeUp 0.6s ease both;
+}
+
+.calendario-page p {
+  color: var(--color-text-muted);
+
+  font-size: 1.1rem;
+}
