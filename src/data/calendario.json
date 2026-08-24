@@ -1,0 +1,102 @@
+[
+  {
+    "giornata": 1,
+    "fase": "Andata",
+    "data": "15/09/2026",
+    "ora": "21:00",
+    "casa": "FC Real Franuzzi",
+    "trasferta": "Squadra 1",
+    "golCasa": null,
+    "golTrasferta": null
+  },
+  {
+    "giornata": 2,
+    "fase": "Andata",
+    "data": "22/09/2026",
+    "ora": "21:30",
+    "casa": "Squadra 2",
+    "trasferta": "FC Real Franuzzi",
+    "golCasa": null,
+    "golTrasferta": null
+  },
+  {
+    "giornata": 3,
+    "fase": "Andata",
+    "data": "29/09/2026",
+    "ora": "20:30",
+    "casa": "FC Real Franuzzi",
+    "trasferta": "Squadra 3",
+    "golCasa": null,
+    "golTrasferta": null
+  },
+  {
+    "giornata": 4,
+    "fase": "Andata",
+    "data": "06/10/2026",
+    "ora": "22:00",
+    "casa": "Squadra 4",
+    "trasferta": "FC Real Franuzzi",
+    "golCasa": null,
+    "golTrasferta": null
+  },
+  {
+    "giornata": 5,
+    "fase": "Andata",
+    "data": "13/10/2026",
+    "ora": "21:00",
+    "casa": "FC Real Franuzzi",
+    "trasferta": "Squadra 5",
+    "golCasa": null,
+    "golTrasferta": null
+  },
+  {
+    "giornata": 6,
+    "fase": "Ritorno",
+    "data": "20/10/2026",
+    "ora": "21:00",
+    "casa": "Squadra 1",
+    "trasferta": "FC Real Franuzzi",
+    "golCasa": null,
+    "golTrasferta": null
+  },
+  {
+    "giornata": 7,
+    "fase": "Ritorno",
+    "data": "27/10/2026",
+    "ora": "21:30",
+    "casa": "FC Real Franuzzi",
+    "trasferta": "Squadra 2",
+    "golCasa": null,
+    "golTrasferta": null
+  },
+  {
+    "giornata": 8,
+    "fase": "Ritorno",
+    "data": "03/11/2026",
+    "ora": "20:30",
+    "casa": "Squadra 3",
+    "trasferta": "FC Real Franuzzi",
+    "golCasa": null,
+    "golTrasferta": null
+  },
+  {
+    "giornata": 9,
+    "fase": "Ritorno",
+    "data": "10/11/2026",
+    "ora": "22:00",
+    "casa": "FC Real Franuzzi",
+    "trasferta": "Squadra 4",
+    "golCasa": null,
+    "golTrasferta": null
+  },
+  {
+    "giornata": 10,
+    "fase": "Ritorno",
+    "data": "17/11/2026",
+    "ora": "21:00",
+    "casa": "Squadra 5",
+    "trasferta": "FC Real Franuzzi",
+    "golCasa": null,
+    "golTrasferta": null
+  }
+]

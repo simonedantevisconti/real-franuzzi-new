@@ -1,37 +1,448 @@
 .statistiche-page {
-  display: flex;
-  align-items: center;
+  min-height: 100vh;
 
-  min-height: 70vh;
-  padding: 100px 0;
-
-  background:
-    radial-gradient(circle at 15% 40%, rgba(177, 162, 1, 0.1), transparent 35%),
-    var(--color-bg);
+  overflow: hidden;
 }
 
-.statistiche-page span {
+/* HERO */
+
+.statistiche-hero {
+  position: relative;
+
+  padding: 120px 0 100px;
+
+  background:
+    radial-gradient(circle at 85% 30%, rgba(0, 0, 254, 0.2), transparent 35%),
+    radial-gradient(
+      circle at 10% 80%,
+      rgba(177, 162, 1, 0.07),
+      transparent 30%
+    ),
+    var(--color-bg);
+
+  border-bottom: 1px solid var(--color-border);
+
+  overflow: hidden;
+}
+
+.statistiche-hero::after {
+  content: "STATS";
+
+  position: absolute;
+
+  right: -25px;
+  bottom: -45px;
+
+  color: transparent;
+
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.04);
+
+  font-family: var(--font-heading);
+  font-size: clamp(7rem, 18vw, 15rem);
+  font-weight: 700;
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+.statistiche-kicker {
+  display: block;
+
+  margin-bottom: 20px;
+
   color: var(--color-yellow);
 
   font-family: var(--font-heading);
   font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.2em;
-}
-
-.statistiche-page h1 {
-  margin: 10px 0;
-
-  font-family: var(--font-heading);
-  font-size: clamp(3.5rem, 9vw, 7rem);
-  font-weight: 700;
-  letter-spacing: -0.06em;
+  letter-spacing: 0.22em;
 
   animation: fadeUp 0.6s ease both;
 }
 
-.statistiche-page p {
+.statistiche-hero h1 {
+  position: relative;
+  z-index: 1;
+
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-weight: 700;
+  line-height: 0.84;
+  letter-spacing: -0.07em;
+
+  animation: fadeUp 0.7s 0.08s ease both;
+}
+
+.statistiche-hero h1 span {
+  color: transparent;
+
+  -webkit-text-stroke: 2px var(--color-blue-light);
+
+  text-shadow: 0 0 45px rgba(0, 0, 254, 0.25);
+}
+
+.statistiche-hero p {
+  position: relative;
+  z-index: 1;
+
+  max-width: 550px;
+
+  margin: 32px 0 0;
+
   color: var(--color-text-muted);
 
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+
+  animation: fadeUp 0.7s 0.16s ease both;
+}
+
+/* CONTENT */
+
+.statistiche-content {
+  padding: 110px 0 130px;
+
+  background: var(--color-bg-soft);
+}
+
+.statistiche-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+
+  margin-bottom: 45px;
+}
+
+.statistiche-heading > div > span {
+  color: var(--color-yellow);
+
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.statistiche-heading h2 {
+  margin: 7px 0 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.statistiche-heading p {
+  max-width: 330px;
+
+  margin: 0 0 8px;
+
+  color: var(--color-text-muted);
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* TABLE */
+
+.classifica-wrapper {
+  border-top: 1px solid var(--color-border);
+}
+
+.classifica-header,
+.classifica-row {
+  display: grid;
+
+  grid-template-columns:
+    80px
+    minmax(260px, 1fr)
+    110px
+    110px
+    110px;
+
+  align-items: center;
+
+  column-gap: 15px;
+}
+
+.classifica-header {
+  min-height: 55px;
+
+  padding: 0 20px;
+
+  color: var(--color-text-muted);
+
+  border-bottom: 1px solid var(--color-border);
+
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.classifica-header
+  > span:not(.classifica-giocatore):not(.classifica-posizione) {
+  text-align: center;
+}
+
+/* ROW */
+
+.classifica-row {
+  position: relative;
+
+  min-height: 105px;
+
+  padding: 16px 20px;
+
+  background: transparent;
+
+  border-bottom: 1px solid var(--color-border);
+
+  animation: fadeUp 0.55s ease both;
+
+  transition:
+    background var(--transition-normal),
+    transform var(--transition-normal),
+    border-color var(--transition-normal);
+}
+
+.classifica-row::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 3px;
+
+  background: var(--color-yellow);
+
+  transform: scaleY(0);
+
+  transition: transform var(--transition-normal);
+}
+
+.classifica-row:hover {
+  background: rgba(255, 255, 255, 0.025);
+
+  transform: translateX(4px);
+
+  border-color: rgba(177, 162, 1, 0.25);
+}
+
+.classifica-row:hover::before {
+  transform: scaleY(1);
+}
+
+/* POSITION */
+
+.classifica-posizione {
+  font-family: var(--font-heading);
+}
+
+.classifica-row .classifica-posizione span {
+  color: rgba(255, 255, 255, 0.3);
+
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* PLAYER */
+
+.classifica-giocatore {
+  display: flex;
+  align-items: center;
+
+  gap: 17px;
+}
+
+.classifica-numero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 46px;
+
+  width: 46px;
+  height: 46px;
+
+  border: 1px solid var(--color-border);
+
+  color: var(--color-yellow);
+
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.classifica-giocatore > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.classifica-nome {
+  color: var(--color-text-muted);
+
+  font-size: 0.8rem;
+}
+
+.classifica-giocatore strong {
+  margin-top: 1px;
+
+  color: var(--color-white);
+
+  font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 2vw, 1.65rem);
+  font-weight: 700;
+
+  line-height: 1.05;
+}
+
+/* STATS */
+
+.classifica-stat {
+  color: var(--color-text);
+
+  text-align: center;
+
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.classifica-gol {
+  color: var(--color-yellow);
+
+  font-size: 1.65rem;
+  font-weight: 700;
+}
+
+/* TOP 3 */
+
+.classifica-top-1 .classifica-posizione span {
+  color: var(--color-yellow);
+}
+
+.classifica-top-1 {
+  background: linear-gradient(90deg, rgba(177, 162, 1, 0.055), transparent 45%);
+}
+
+.classifica-top-2 .classifica-posizione span,
+.classifica-top-3 .classifica-posizione span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.statistiche-note {
+  margin: 18px 0 0;
+
+  color: var(--color-text-muted);
+
+  font-size: 0.75rem;
+}
+
+.mobile-label {
+  display: none;
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+  .statistiche-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .classifica-header,
+  .classifica-row {
+    grid-template-columns:
+      60px
+      minmax(200px, 1fr)
+      80px
+      80px
+      80px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .statistiche-hero {
+    padding: 80px 0 70px;
+  }
+
+  .statistiche-content {
+    padding: 75px 0 90px;
+  }
+
+  .classifica-header {
+    display: none;
+  }
+
+  .classifica-row {
+    grid-template-columns: 45px 1fr repeat(3, 55px);
+
+    min-height: 95px;
+
+    padding: 15px 8px;
+
+    column-gap: 5px;
+  }
+
+  .classifica-row .classifica-posizione span {
+    font-size: 1.5rem;
+  }
+
+  .classifica-giocatore {
+    gap: 10px;
+
+    min-width: 0;
+  }
+
+  .classifica-numero {
+    display: none;
+  }
+
+  .classifica-nome {
+    font-size: 0.68rem;
+  }
+
+  .classifica-giocatore strong {
+    font-size: 1rem;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .classifica-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 3px;
+
+    font-size: 1rem;
+  }
+
+  .classifica-gol {
+    font-size: 1.2rem;
+  }
+
+  .mobile-label {
+    display: block;
+
+    color: var(--color-text-muted);
+
+    font-family: var(--font-body);
+    font-size: 0.55rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 }
