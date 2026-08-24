@@ -369,6 +369,220 @@
   }
 }
 
+.statistiche-navigation {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 100px;
+}
+
+.statistiche-navigation a {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  min-width: 175px;
+
+  padding: 14px 18px;
+
+  background: transparent;
+  color: var(--color-white);
+
+  border: 1px solid var(--color-border);
+
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  transition:
+    color var(--transition-normal),
+    background var(--transition-normal),
+    border-color var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.statistiche-navigation a span {
+  color: var(--color-yellow);
+
+  transition: transform var(--transition-normal);
+}
+
+.statistiche-navigation a:hover {
+  background: var(--color-yellow);
+  color: #080808;
+
+  border-color: var(--color-yellow);
+
+  transform: translateY(-3px);
+}
+
+.statistiche-navigation a:hover span {
+  color: #080808;
+
+  transform: translateY(3px);
+}
+
+.statistiche-section {
+  scroll-margin-top: 120px;
+}
+
+.statistiche-section + .statistiche-section {
+  margin-top: 130px;
+}
+
+/* CLASSIFICA GENERALE */
+
+.campionato-wrapper {
+  width: 100%;
+
+  border-top: 1px solid var(--color-border);
+
+  overflow-x: auto;
+}
+
+.campionato-header,
+.campionato-row {
+  display: grid;
+
+  grid-template-columns:
+    65px
+    minmax(230px, 1fr)
+    repeat(8, 70px);
+
+  align-items: center;
+
+  min-width: 900px;
+}
+
+.campionato-header {
+  min-height: 55px;
+
+  padding: 0 20px;
+
+  color: var(--color-text-muted);
+
+  border-bottom: 1px solid var(--color-border);
+
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.campionato-header span:not(:nth-child(2)) {
+  text-align: center;
+}
+
+/* ROW */
+
+.campionato-row {
+  position: relative;
+
+  min-height: 82px;
+
+  padding: 0 20px;
+
+  border-bottom: 1px solid var(--color-border);
+
+  color: var(--color-text);
+
+  animation: fadeUp 0.55s ease both;
+
+  transition:
+    background var(--transition-normal),
+    transform var(--transition-normal),
+    border-color var(--transition-normal);
+}
+
+.campionato-row::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 3px;
+
+  background: var(--color-yellow);
+
+  transform: scaleY(0);
+
+  transition: transform var(--transition-normal);
+}
+
+.campionato-row:hover {
+  background: rgba(255, 255, 255, 0.025);
+
+  transform: translateX(4px);
+
+  border-color: rgba(177, 162, 1, 0.25);
+}
+
+.campionato-row:hover::before {
+  transform: scaleY(1);
+}
+
+.campionato-row > div:not(.campionato-squadra) {
+  text-align: center;
+
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+}
+
+.campionato-posizione {
+  color: var(--color-text-muted);
+
+  font-size: 1.25rem !important;
+  font-weight: 700;
+}
+
+.campionato-squadra strong {
+  color: var(--color-white);
+
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.campionato-punti {
+  color: var(--color-yellow);
+
+  font-size: 1.25rem !important;
+  font-weight: 700;
+}
+
+/* REAL FRANUZZI */
+
+.campionato-row-real {
+  background: linear-gradient(
+    90deg,
+    rgba(177, 162, 1, 0.08),
+    rgba(0, 0, 254, 0.025),
+    transparent
+  );
+}
+
+.campionato-row-real::before {
+  transform: scaleY(1);
+}
+
+.campionato-row-real .campionato-posizione {
+  color: var(--color-yellow);
+}
+
+.campionato-row-real .campionato-squadra strong {
+  color: var(--color-yellow);
+}
+
 /* MOBILE */
 
 @media (max-width: 767px) {
@@ -444,5 +658,39 @@
     font-size: 0.55rem;
     font-weight: 600;
     text-transform: uppercase;
+  }
+
+  .statistiche-navigation {
+    margin-bottom: 70px;
+  }
+
+  .statistiche-navigation a {
+    flex: 1;
+
+    min-width: 0;
+
+    gap: 15px;
+
+    padding: 13px 14px;
+  }
+
+  .statistiche-section + .statistiche-section {
+    margin-top: 90px;
+  }
+
+  .campionato-wrapper {
+    margin-right: -20px;
+
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .statistiche-navigation {
+    gap: 8px;
+  }
+
+  .statistiche-navigation a {
+    font-size: 0.76rem;
   }
 }
