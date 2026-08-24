@@ -147,19 +147,7 @@
 }
 
 .calendario-fase-header {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-
   margin-bottom: 25px;
-}
-
-.calendario-fase-header > span {
-  color: var(--color-yellow);
-
-  font-family: var(--font-heading);
-  font-size: 0.78rem;
-  font-weight: 700;
 }
 
 .calendario-fase-header h2 {

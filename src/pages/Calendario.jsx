@@ -125,8 +125,6 @@ const Calendario = () => {
 
           <div className="calendario-fase">
             <div className="calendario-fase-header">
-              <span>01</span>
-
               <h2>Andata</h2>
             </div>
 
@@ -137,8 +135,6 @@ const Calendario = () => {
 
           <div className="calendario-fase">
             <div className="calendario-fase-header">
-              <span>02</span>
-
               <h2>Ritorno</h2>
             </div>
 
