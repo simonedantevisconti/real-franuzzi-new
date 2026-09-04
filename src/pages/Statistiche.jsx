@@ -1,7 +1,7 @@
+import PageHero from "../components/PageHero";
 import rosa from "../data/rosa.json";
 import statistiche from "../data/statistiche.json";
 import classificaData from "../data/classifica.json";
-
 import "../styles/statistiche.css";
 
 const ruoliGiocatori = [
@@ -69,21 +69,12 @@ const Statistiche = () => {
 
   return (
     <div className="statistiche-page">
-      <section className="statistiche-hero">
-        <div className="page-container">
-          <span className="statistiche-kicker">FC REAL FRANUZZI</span>
-
-          <h1>
-            I NOSTRI
-            <br />
-            <span>NUMERI.</span>
-          </h1>
-
-          <p>
-            Classifica, gol, assist e presenze dei protagonisti della stagione.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        titleTop="I NOSTRI"
+        titleHighlight="NUMERI."
+        description="Classifica, gol, assist e presenze dei protagonisti della stagione."
+        backgroundText="STATS"
+      />
 
       <section className="statistiche-content">
         <div className="page-container">

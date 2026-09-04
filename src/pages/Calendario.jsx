@@ -1,5 +1,5 @@
 import calendario from "../data/calendario.json";
-
+import PageHero from "../components/PageHero";
 import "../styles/calendario.css";
 
 const Calendario = () => {
@@ -96,19 +96,12 @@ const Calendario = () => {
 
   return (
     <div className="calendario-page">
-      <section className="calendario-hero">
-        <div className="page-container">
-          <span className="calendario-kicker">FC REAL FRANUZZI</span>
-
-          <h1>
-            IL NOSTRO
-            <br />
-            <span>CAMMINO.</span>
-          </h1>
-
-          <p>Tutte le partite della stagione, dall&apos;andata al ritorno.</p>
-        </div>
-      </section>
+      <PageHero
+        titleTop="IL NOSTRO"
+        titleHighlight="CAMMINO."
+        description="Tutte le partite della stagione, dall'andata al ritorno."
+        backgroundText="MATCH"
+      />
 
       <section className="calendario-content">
         <div className="page-container">

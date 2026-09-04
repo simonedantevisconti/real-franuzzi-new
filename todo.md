@@ -1,3 +1,6 @@
+TODO:
+- Scritte dietro gialle
+
 COLORI LOGO
 Blue: #0000FE
 Giallo: #B1A201

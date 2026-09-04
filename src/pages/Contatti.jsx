@@ -1,3 +1,5 @@
+import PageHero from "../components/PageHero";
+
 import "../styles/contatti.css";
 
 const Contatti = () => {
@@ -27,27 +29,18 @@ const Contatti = () => {
 
   return (
     <div className="contatti-page">
-      <section className="contatti-hero">
-        <div className="page-container">
-          <span className="contatti-kicker">FC REAL FRANUZZI</span>
-
-          <h1>
-            RESTA
-            <br />
-            <span>CON NOI.</span>
-          </h1>
-
-          <p>
-            Seguici sui nostri canali ufficiali e vivi insieme a noi la nuova
-            stagione del FC Real Franuzzi.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        titleTop="RESTA"
+        titleHighlight="CON NOI."
+        description="Seguici sui nostri canali ufficiali e vivi insieme a noi la nuova stagione del FC Real Franuzzi."
+        backgroundText="LINKS"
+      />
 
       <section className="contatti-social">
         <div className="page-container">
           <div className="contatti-social-header">
             <span>I NOSTRI CANALI</span>
+
             <h2>Seguici online</h2>
           </div>
 
@@ -79,7 +72,8 @@ const Contatti = () => {
                   <h3>{social.username}</h3>
 
                   <span className="social-cta">
-                    Seguici <span>→</span>
+                    Seguici
+                    <span aria-hidden="true">→</span>
                   </span>
                 </div>
               </a>

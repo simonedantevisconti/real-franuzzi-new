@@ -1,7 +1,6 @@
 import rosa from "../data/rosa.json";
-
+import PageHero from "../components/PageHero";
 import fallbackImage from "../assets/imgs/user.webp";
-
 import "../styles/rosa.css";
 
 const playerImages = import.meta.glob("../assets/players/*.webp", {
@@ -54,19 +53,12 @@ const sections = [
 const Rosa = () => {
   return (
     <div className="rosa-page">
-      <section className="rosa-hero">
-        <div className="page-container">
-          <span className="rosa-kicker">FC REAL FRANUZZI</span>
-
-          <h1>
-            LA NOSTRA
-            <br />
-            <span>ROSA</span>
-          </h1>
-
-          <p>I protagonisti della nuova stagione del FC Real Franuzzi.</p>
-        </div>
-      </section>
+      <PageHero
+        titleTop="LA NOSTRA"
+        titleHighlight="ROSA"
+        description="I protagonisti della nuova stagione del FC Real Franuzzi."
+        backgroundText="TEAM"
+      />
 
       <section className="rosa-content">
         <div className="page-container">
