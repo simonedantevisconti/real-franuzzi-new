@@ -1,5 +1,6 @@
 TODO:
-- Scritte dietro gialle
+- Rosa
+- Calendario
 
 COLORI LOGO
 Blue: #0000FE

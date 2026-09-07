@@ -1,6 +1,6 @@
 [
   {
-    "nome": "",
+    "nome": "Alex",
     "cognome": "Fornasier",
     "ruolo": "Portiere",
     "numero": 1,
@@ -27,6 +27,33 @@
     "immagine-2": "marco-cammarata-2.webp"
   },
   {
+    "nome": "Matteo",
+    "cognome": "Fumagalli",
+    "ruolo": "Difensore",
+    "numero": 5,
+    "descrizione": "",
+    "immagine-1": "",
+    "immagine-2": ""
+  },
+  {
+    "nome": "Peter",
+    "cognome": "Sohna",
+    "ruolo": "Difensore",
+    "numero": 3,
+    "descrizione": "",
+    "immagine-1": "",
+    "immagine-2": ""
+  },
+  {
+    "nome": "Giorgio",
+    "cognome": "Chignoli",
+    "ruolo": "Difensore",
+    "numero": 2,
+    "descrizione": "",
+    "immagine-1": "",
+    "immagine-2": ""
+  },
+  {
     "nome": "Fabio",
     "cognome": "Barbieri",
     "ruolo": "Centrocampista",
@@ -37,7 +64,7 @@
   },
   {
     "nome": "Mattia",
-    "cognome": "Gargiulo",
+    "cognome": "Gargiuolo",
     "ruolo": "Centrocampista",
     "numero": 15,
     "descrizione": "",
@@ -58,6 +85,24 @@
     "cognome": "Perego",
     "ruolo": "Centrocampista",
     "numero": 45,
+    "descrizione": "",
+    "immagine-1": "",
+    "immagine-2": ""
+  },
+  {
+    "nome": "Matteo",
+    "cognome": "Comelli",
+    "ruolo": "Centrocampista",
+    "numero": 8,
+    "descrizione": "",
+    "immagine-1": "",
+    "immagine-2": ""
+  },
+  {
+    "nome": "Kerim",
+    "cognome": "Bouinbi",
+    "ruolo": "Centrocampista",
+    "numero": 11,
     "descrizione": "",
     "immagine-1": "",
     "immagine-2": ""
@@ -90,6 +135,24 @@
     "immagine-2": "stefano-gennari-2.webp"
   },
   {
+    "nome": "Zeno",
+    "cognome": "Crippa",
+    "ruolo": "Attaccante",
+    "numero": 21,
+    "descrizione": "",
+    "immagine-1": "",
+    "immagine-2": ""
+  },
+  {
+    "nome": "Cristian",
+    "cognome": "Sciortino",
+    "ruolo": "Presidente",
+    "numero": null,
+    "descrizione": "",
+    "immagine-1": "",
+    "immagine-2": ""
+  },
+  {
     "nome": "Francesco",
     "cognome": "Lamanuzzi",
     "ruolo": "Allenatore",
@@ -110,7 +173,7 @@
   {
     "nome": "Emanuele",
     "cognome": "Francesconi",
-    "ruolo": "Presidente",
+    "ruolo": "Direttore Sportivo",
     "numero": null,
     "descrizione": "",
     "immagine-1": "",

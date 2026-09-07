@@ -46,7 +46,7 @@ const sections = [
   },
   {
     titolo: "Staff",
-    ruoli: ["Allenatore", "Presidente", "Dirigente"],
+    ruoli: ["Allenatore", "Presidente", "Dirigente", "Direttore Sportivo"],
   },
 ];
 
