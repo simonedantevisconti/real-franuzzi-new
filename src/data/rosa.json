@@ -32,8 +32,8 @@
     "ruolo": "Difensore",
     "numero": 5,
     "descrizione": "",
-    "immagine-1": "",
-    "immagine-2": ""
+    "immagine-1": "matteo-fumagalli-1.webp",
+    "immagine-2": "matteo-fumagalli-2.webp"
   },
   {
     "nome": "Peter",
@@ -50,8 +50,8 @@
     "ruolo": "Difensore",
     "numero": 2,
     "descrizione": "",
-    "immagine-1": "",
-    "immagine-2": ""
+    "immagine-1": "giorgio-chignoli-1.webp",
+    "immagine-2": "giorgio-chignoli-2.webp"
   },
   {
     "nome": "Fabio",
@@ -68,8 +68,8 @@
     "ruolo": "Centrocampista",
     "numero": 15,
     "descrizione": "",
-    "immagine-1": "mattia-gargiulo-1.webp",
-    "immagine-2": "mattia-gargiulo-2.webp"
+    "immagine-1": "mattia-gargiuolo-1.webp",
+    "immagine-2": "mattia-gargiuolo-2.webp"
   },
   {
     "nome": "Yuri",
@@ -95,8 +95,8 @@
     "ruolo": "Centrocampista",
     "numero": 8,
     "descrizione": "",
-    "immagine-1": "",
-    "immagine-2": ""
+    "immagine-1": "matteo-comelli-1.webp",
+    "immagine-2": "matteo-comelli-2.webp"
   },
   {
     "nome": "Kerim",
@@ -104,8 +104,8 @@
     "ruolo": "Centrocampista",
     "numero": 11,
     "descrizione": "",
-    "immagine-1": "",
-    "immagine-2": ""
+    "immagine-1": "kerim-bouinbi-1.webp",
+    "immagine-2": "kerim-bouinbi-2.webp"
   },
   {
     "nome": "Giacomo",
@@ -113,8 +113,8 @@
     "ruolo": "Attaccante",
     "numero": 9,
     "descrizione": "",
-    "immagine-1": "",
-    "immagine-2": ""
+    "immagine-1": "giacomo-lamanuzzi-1.webp",
+    "immagine-2": "giacomo-lamanuzzi-2.webp"
   },
   {
     "nome": "Alessandro",
@@ -122,8 +122,8 @@
     "ruolo": "Attaccante",
     "numero": 22,
     "descrizione": "",
-    "immagine-1": "alessandro-spinelli-1.webp",
-    "immagine-2": "alessandro-spinelli-2.webp"
+    "immagine-1": "",
+    "immagine-2": ""
   },
   {
     "nome": "Stefano",
@@ -131,8 +131,8 @@
     "ruolo": "Attaccante",
     "numero": 10,
     "descrizione": "",
-    "immagine-1": "stefano-gennari-1.webp",
-    "immagine-2": "stefano-gennari-2.webp"
+    "immagine-1": "",
+    "immagine-2": ""
   },
   {
     "nome": "Zeno",
@@ -140,8 +140,8 @@
     "ruolo": "Attaccante",
     "numero": 21,
     "descrizione": "",
-    "immagine-1": "",
-    "immagine-2": ""
+    "immagine-1": "zeno-crippa-1.webp",
+    "immagine-2": "zeno-crippa-2.webp"
   },
   {
     "nome": "Cristian",
@@ -158,8 +158,8 @@
     "ruolo": "Allenatore",
     "numero": null,
     "descrizione": "",
-    "immagine-1": "francesco-lamanuzzi-1.webp",
-    "immagine-2": "francesco-lamanuzzi-2.webp"
+    "immagine-1": "",
+    "immagine-2": ""
   },
   {
     "nome": "Christian",
@@ -167,8 +167,8 @@
     "ruolo": "Allenatore",
     "numero": null,
     "descrizione": "",
-    "immagine-1": "christian-lamanuzzi-1.webp",
-    "immagine-2": "christian-lamanuzzi-2.webp"
+    "immagine-1": "",
+    "immagine-2": ""
   },
   {
     "nome": "Emanuele",
@@ -176,8 +176,8 @@
     "ruolo": "Direttore Sportivo",
     "numero": null,
     "descrizione": "",
-    "immagine-1": "",
-    "immagine-2": ""
+    "immagine-1": "emanuele-francesconi-1.webp",
+    "immagine-2": "emanuele-francesconi-2.webp"
   },
   {
     "nome": "Simone",
