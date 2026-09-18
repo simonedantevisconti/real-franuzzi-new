@@ -1,29 +1,35 @@
 # FC Real Franuzzi
 
-Sito ufficiale di FC Real Franuzzi, squadra di Calcio a 8 di Bergamo.
+Sito ufficiale di FC Real Franuzzi, squadra di calcio a 8 di Bergamo.
 
-## Sito ufficiale
-https://realfranuzzi.site/
+## Pagine principali
 
-## Sezioni principali
-- Homepage: https://realfranuzzi.site/
-- Rosa: https://realfranuzzi.site/rosa
-- Calendario: https://realfranuzzi.site/calendario
-- Statistiche e classifica: https://realfranuzzi.site/statistiche
-- Contatti e social: https://realfranuzzi.site/contatti
+- [Homepage](https://realfranuzzi.site/)
+- [Rosa](https://realfranuzzi.site/rosa)
+- [Calendario](https://realfranuzzi.site/calendario)
+- [Statistiche e classifica](https://realfranuzzi.site/statistiche)
+- [Contatti e social](https://realfranuzzi.site/contatti)
 
-## Informazioni principali
-FC Real Franuzzi è una squadra di Calcio a 8 di Bergamo.
+## Informazioni sul club
 
-Il sito contiene informazioni sulla squadra, sulla rosa, sul calendario della stagione, sui risultati, sulla classifica, sulle statistiche dei giocatori e sui canali ufficiali del club.
+FC Real Franuzzi è una squadra di calcio a 8 di Bergamo.
 
-## Canali ufficiali
-- Instagram: https://www.instagram.com/fc.real.franuzzi/
-- YouTube: https://www.youtube.com/@FCrealFranuzzi
-- Twitch: https://www.twitch.tv/fcrealfranuzzi
+Il sito ufficiale contiene informazioni sulla rosa, sul calendario, sui risultati, sulla classifica, sulle statistiche dei giocatori e sui canali ufficiali della squadra.
 
 ## Competizione
-Lega Calcio a 8 Bergamo.
+
+FC Real Franuzzi partecipa alla Lega Calcio a 8 Bergamo.
+
+## Canali ufficiali
+
+- [Instagram](https://www.instagram.com/fc.real.franuzzi/)
+- [YouTube](https://www.youtube.com/@FCrealFranuzzi)
+- [Twitch](https://www.twitch.tv/fcrealfranuzzi)
+
+## Sitemap
+
+- [Sitemap XML](https://realfranuzzi.site/sitemap.xml)
 
 ## Lingua
-Italiano.
+
+Italiano
