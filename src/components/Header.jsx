@@ -1,7 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
 
-import logo from "../assets/imgs/logo.webp";
-
 import "../styles/header.css";
 
 const Header = () => {
@@ -33,7 +31,7 @@ const Header = () => {
             onClick={closeNavbar}
           >
             <img
-              src={logo}
+              src="/logo.webp"
               alt="FC Real Franuzzi"
               className="franuzzi-brand-logo"
             />

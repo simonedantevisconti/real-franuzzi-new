@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 
-import logo from "../assets/imgs/logo.webp";
-
 import "../styles/not-found.css";
 
 const NotFound = () => {
@@ -34,7 +32,7 @@ const NotFound = () => {
 
         <div className="not-found-visual" aria-hidden="true">
           <div className="not-found-logo-ring">
-            <img src={logo} alt="" />
+            <img src="/logo.webp" alt="" />
           </div>
         </div>
       </div>

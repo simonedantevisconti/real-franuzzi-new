@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 
-import logo from "../assets/imgs/logo.webp";
-
 import "../styles/homepage.css";
 
 const Homepage = () => {
@@ -44,7 +42,7 @@ const Homepage = () => {
               <div className="home-logo-ring home-logo-ring-two"></div>
 
               <img
-                src={logo}
+                src="/logo.webp"
                 alt="Logo FC Real Franuzzi"
                 className="home-main-logo"
               />
