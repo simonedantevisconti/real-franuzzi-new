@@ -97,15 +97,23 @@ const Homepage = () => {
 
       <section className="home-manifesto">
         <div className="home-manifesto-track">
-          <span>REAL FRANUZZI</span>
-          <span>•</span>
-          <span>PASSIONE</span>
-          <span>•</span>
-          <span>SQUADRA</span>
-          <span>•</span>
-          <span>BERGAMO</span>
-          <span>•</span>
-          <span>REAL FRANUZZI</span>
+          <span>¡HALA REAL!</span>
+          <span>¡HALA REAL!</span>
+          <span>¡HALA REAL!</span>
+          <span>¡HALA REAL!</span>
+          <span>¡HALA REAL!</span>
+          <span>¡HALA REAL!</span>
+          <span>¡HALA REAL!</span>
+          <span>¡HALA REAL!</span>
+          <span>¡HALA REAL!</span>
+          <span>¡HALA REAL!</span>
+          <span>¡HALA REAL!</span>
+          <span>¡HALA REAL!</span>
+          <span>¡HALA REAL!</span>
+          <span>¡HALA REAL!</span>
+          <span>¡HALA REAL!</span>
+          <span>¡HALA REAL!</span>
+          <span>¡HALA REAL!</span>
         </div>
       </section>
     </div>
