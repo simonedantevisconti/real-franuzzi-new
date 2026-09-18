@@ -122,8 +122,8 @@
     "ruolo": "Attaccante",
     "numero": 22,
     "descrizione": "",
-    "immagine-1": "",
-    "immagine-2": ""
+    "immagine-1": "alessandro-spinelli-1.webp",
+    "immagine-2": "alessandro-spinelli-2.webp"
   },
   {
     "nome": "Stefano",
@@ -131,8 +131,8 @@
     "ruolo": "Attaccante",
     "numero": 10,
     "descrizione": "",
-    "immagine-1": "",
-    "immagine-2": ""
+    "immagine-1": "stefano-gennari-1.webp",
+    "immagine-2": "stefano-gennari-2.webp"
   },
   {
     "nome": "Zeno",
@@ -158,8 +158,8 @@
     "ruolo": "Allenatore",
     "numero": null,
     "descrizione": "",
-    "immagine-1": "",
-    "immagine-2": ""
+    "immagine-1": "francesco-lamanuzzi-1.webp",
+    "immagine-2": "francesco-lamanuzzi-2.webp"
   },
   {
     "nome": "Christian",
@@ -167,8 +167,8 @@
     "ruolo": "Allenatore",
     "numero": null,
     "descrizione": "",
-    "immagine-1": "",
-    "immagine-2": ""
+    "immagine-1": "cristian-lamanuzzi-1.webp",
+    "immagine-2": "cristian-lamanuzzi-2.webp"
   },
   {
     "nome": "Emanuele",
