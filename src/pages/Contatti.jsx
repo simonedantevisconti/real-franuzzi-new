@@ -1,4 +1,5 @@
 import PageHero from "../components/PageHero";
+import Seo from "../components/Seo";
 
 import "../styles/contatti.css";
 
@@ -28,74 +29,83 @@ const Contatti = () => {
   ];
 
   return (
-    <div className="contatti-page">
-      <PageHero
-        titleTop="RESTA"
-        titleHighlight="CON NOI."
-        description="Seguici sui nostri canali ufficiali e vivi insieme a noi la nuova stagione del FC Real Franuzzi."
-        backgroundText="LINKS"
+    <>
+      <Seo
+        title="FC Real Franuzzi Bergamo | Social e Contatti"
+        description="Segui FC Real Franuzzi sui canali ufficiali e resta aggiornato sulla squadra di calcio a 8 di Bergamo."
+        path="/contatti"
+        keywords="FC Real Franuzzi contatti, Real Franuzzi Instagram, calcio a 8 Bergamo social"
       />
 
-      <section className="contatti-social">
-        <div className="page-container">
-          <div className="contatti-social-header">
-            <span>I NOSTRI CANALI</span>
+      <div className="contatti-page">
+        <PageHero
+          titleTop="RESTA"
+          titleHighlight="CON NOI."
+          description="Seguici sui nostri canali ufficiali e vivi insieme a noi la nuova stagione del FC Real Franuzzi."
+          backgroundText="LINKS"
+        />
 
-            <h2>Seguici online</h2>
-          </div>
+        <section className="contatti-social">
+          <div className="page-container">
+            <div className="contatti-social-header">
+              <span>I NOSTRI CANALI</span>
 
-          <div className="contatti-social-grid">
-            {socialLinks.map((social, index) => (
-              <a
-                key={social.nome}
-                href={social.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`social-card social-card-${social.classe}`}
-                style={{
-                  animationDelay: `${index * 0.12}s`,
-                }}
-              >
-                <div className="social-card-top">
-                  <div className="social-icon">
-                    <i className={social.icona} aria-hidden="true"></i>
+              <h2>Seguici online</h2>
+            </div>
+
+            <div className="contatti-social-grid">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={social.nome}
+                  href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`social-card social-card-${social.classe}`}
+                  style={{
+                    animationDelay: `${index * 0.12}s`,
+                  }}
+                >
+                  <div className="social-card-top">
+                    <div className="social-icon">
+                      <i className={social.icona} aria-hidden="true"></i>
+                    </div>
+
+                    <span className="social-arrow" aria-hidden="true">
+                      ↗
+                    </span>
                   </div>
 
-                  <span className="social-arrow" aria-hidden="true">
-                    ↗
-                  </span>
-                </div>
+                  <div className="social-card-content">
+                    <span className="social-platform">{social.nome}</span>
 
-                <div className="social-card-content">
-                  <span className="social-platform">{social.nome}</span>
+                    <h3>{social.username}</h3>
 
-                  <h3>{social.username}</h3>
-
-                  <span className="social-cta">
-                    Seguici
-                    <span aria-hidden="true">→</span>
-                  </span>
-                </div>
-              </a>
-            ))}
+                    <span className="social-cta">
+                      Seguici
+                      <span aria-hidden="true">→</span>
+                    </span>
+                  </div>
+                </a>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="contatti-claim">
-        <div className="page-container">
-          <div className="contatti-claim-content">
-            <span>SEGUICI. TIFA. VIVI LA STAGIONE.</span>
+        <section className="contatti-claim">
+          <div className="page-container">
+            <div className="contatti-claim-content">
+              <span>SEGUICI. TIFA. VIVI LA STAGIONE.</span>
 
-            <h2>
-              HALA REAL
-              <br />
-              <strong>FRANUZZI.</strong>
-            </h2>
+              <h2>
+                HALA REAL
+                <br />
+                <strong>FRANUZZI.</strong>
+              </h2>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </>
   );
 };
 

@@ -1,5 +1,8 @@
 import calendario from "../data/calendario.json";
+
 import PageHero from "../components/PageHero";
+import Seo from "../components/Seo";
+
 import "../styles/calendario.css";
 
 const Calendario = () => {
@@ -95,49 +98,58 @@ const Calendario = () => {
   };
 
   return (
-    <div className="calendario-page">
-      <PageHero
-        titleTop="IL NOSTRO"
-        titleHighlight="CAMMINO."
-        description="Tutte le partite della stagione, dall'andata al ritorno."
-        backgroundText="MATCH"
+    <>
+      <Seo
+        title="Calendario FC Real Franuzzi | Calcio a 8 Bergamo"
+        description="Consulta il calendario delle partite del FC Real Franuzzi nella Lega Calcio a 8 Bergamo. Scopri giornate, date, orari e risultati della stagione."
+        path="/calendario"
+        keywords="calendario FC Real Franuzzi, partite Real Franuzzi, calcio a 8 Bergamo, calendario calcio a 8 Bergamo, Lega Calcio a 8 Bergamo, risultati calcio a 8 Bergamo"
       />
 
-      <section className="calendario-content">
-        <div className="page-container">
-          <div className="calendario-intro">
-            <span>STAGIONE</span>
+      <div className="calendario-page">
+        <PageHero
+          titleTop="IL NOSTRO"
+          titleHighlight="CAMMINO."
+          description="Tutte le partite della stagione, dall'andata al ritorno."
+          backgroundText="MATCH"
+        />
 
-            <h2>Calendario partite</h2>
+        <section className="calendario-content">
+          <div className="page-container">
+            <div className="calendario-intro">
+              <span>STAGIONE</span>
 
-            <p>
-              Segui il cammino del FC Real Franuzzi nella Lega Calcio a 8
-              Bergamo.
-            </p>
+              <h2>Calendario partite</h2>
+
+              <p>
+                Segui il cammino del FC Real Franuzzi nella Lega Calcio a 8
+                Bergamo.
+              </p>
+            </div>
+
+            <div className="calendario-fase">
+              <div className="calendario-fase-header">
+                <h2>Andata</h2>
+              </div>
+
+              <div className="matches-list">
+                {andata.map((partita, index) => renderPartita(partita, index))}
+              </div>
+            </div>
+
+            <div className="calendario-fase">
+              <div className="calendario-fase-header">
+                <h2>Ritorno</h2>
+              </div>
+
+              <div className="matches-list">
+                {ritorno.map((partita, index) => renderPartita(partita, index))}
+              </div>
+            </div>
           </div>
-
-          <div className="calendario-fase">
-            <div className="calendario-fase-header">
-              <h2>Andata</h2>
-            </div>
-
-            <div className="matches-list">
-              {andata.map((partita, index) => renderPartita(partita, index))}
-            </div>
-          </div>
-
-          <div className="calendario-fase">
-            <div className="calendario-fase-header">
-              <h2>Ritorno</h2>
-            </div>
-
-            <div className="matches-list">
-              {ritorno.map((partita, index) => renderPartita(partita, index))}
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </>
   );
 };
 

@@ -1,120 +1,134 @@
 import { Link } from "react-router-dom";
+import Seo from "../components/Seo";
 
 import "../styles/homepage.css";
 
 const Homepage = () => {
   return (
-    <div className="homepage">
-      <section className="home-hero">
-        <div className="home-hero-glow home-hero-glow-blue"></div>
-        <div className="home-hero-glow home-hero-glow-yellow"></div>
+    <>
+      <>
+        <Seo
+          title="FC Real Franuzzi | Calcio a 8 Bergamo"
+          description="Sito ufficiale FC Real Franuzzi, squadra di calcio a 8 di Bergamo. Scopri rosa, calendario, risultati, classifica e statistiche."
+          path="/"
+          keywords="FC Real Franuzzi, Real Franuzzi, calcio a 8 Bergamo, squadra calcio a 8 Bergamo, Lega Calcio a 8 Bergamo, calcio amatoriale Bergamo"
+        />
 
-        <div className="page-container home-hero-container">
-          <div className="home-hero-content">
-            <div className="home-season-label">
-              <span></span>
-              NUOVA STAGIONE
-            </div>
+        <div className="homepage">...</div>
+      </>
 
-            <h1>
-              NON È SOLO
-              <br />
-              <span>CALCIO.</span>
-            </h1>
+      <div className="homepage">
+        <section className="home-hero">
+          <div className="home-hero-glow home-hero-glow-blue"></div>
+          <div className="home-hero-glow home-hero-glow-yellow"></div>
 
-            <p className="home-claim">
-              Una nuova stagione, la stessa fame.
-              <br />
-              <strong>FC Real Franuzzi.</strong>
-            </p>
+          <div className="page-container home-hero-container">
+            <div className="home-hero-content">
+              <div className="home-season-label">
+                <span></span>
+                NUOVA STAGIONE
+              </div>
 
-            <div className="home-actions">
-              <Link to="/rosa" className="home-primary-button">
-                Scopri la nuova rosa
-                <span aria-hidden="true">→</span>
-              </Link>
-            </div>
-          </div>
-
-          <div className="home-hero-visual">
-            <div className="home-logo-orbit">
-              <div className="home-logo-ring home-logo-ring-one"></div>
-              <div className="home-logo-ring home-logo-ring-two"></div>
-
-              <img
-                src="/logo.webp"
-                alt="Logo FC Real Franuzzi"
-                className="home-main-logo"
-              />
-            </div>
-
-            <div className="home-season-number">
-              <span>FC</span>
-              <strong>REAL</strong>
-              <span>FRANUZZI</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="home-scroll-indicator" aria-hidden="true">
-          <span></span>
-        </div>
-      </section>
-
-      <section className="home-identity">
-        <div className="page-container">
-          <div className="home-identity-grid">
-            <div>
-              <span className="home-section-label">IL CLUB</span>
-
-              <h2>
-                Più di una squadra.
+              <h1>
+                NON È SOLO
                 <br />
-                <span>Una famiglia.</span>
-              </h2>
+                <span>CALCIO.</span>
+              </h1>
+
+              <p className="home-claim">
+                Una nuova stagione, la stessa fame.
+                <br />
+                <strong>FC Real Franuzzi.</strong>
+              </p>
+
+              <div className="home-actions">
+                <Link to="/rosa" className="home-primary-button">
+                  Scopri la nuova rosa
+                  <span aria-hidden="true">→</span>
+                </Link>
+              </div>
             </div>
 
-            <div className="home-identity-copy">
-              <p>
-                FC Real Franuzzi torna in campo per una nuova avventura nella
-                Lega Calcio a 8 Bergamo.
-              </p>
+            <div className="home-hero-visual">
+              <div className="home-logo-orbit">
+                <div className="home-logo-ring home-logo-ring-one"></div>
+                <div className="home-logo-ring home-logo-ring-two"></div>
 
-              <p>
-                Ambizione, appartenenza e voglia di divertirsi. Dentro e fuori
-                dal campo.
-              </p>
+                <img
+                  src="/logo.webp"
+                  alt="Logo FC Real Franuzzi"
+                  className="home-main-logo"
+                />
+              </div>
 
-              <Link to="/contatti">
-                Seguici durante il percorso <span>→</span>
-              </Link>
+              <div className="home-season-number">
+                <span>FC</span>
+                <strong>REAL</strong>
+                <span>FRANUZZI</span>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section className="home-manifesto">
-        <div className="home-manifesto-track">
-          <span>¡HALA REAL!</span>
-          <span>¡HALA REAL!</span>
-          <span>¡HALA REAL!</span>
-          <span>¡HALA REAL!</span>
-          <span>¡HALA REAL!</span>
-          <span>¡HALA REAL!</span>
-          <span>¡HALA REAL!</span>
-          <span>¡HALA REAL!</span>
-          <span>¡HALA REAL!</span>
-          <span>¡HALA REAL!</span>
-          <span>¡HALA REAL!</span>
-          <span>¡HALA REAL!</span>
-          <span>¡HALA REAL!</span>
-          <span>¡HALA REAL!</span>
-          <span>¡HALA REAL!</span>
-          <span>¡HALA REAL!</span>
-          <span>¡HALA REAL!</span>
-        </div>
-      </section>
-    </div>
+          <div className="home-scroll-indicator" aria-hidden="true">
+            <span></span>
+          </div>
+        </section>
+
+        <section className="home-identity">
+          <div className="page-container">
+            <div className="home-identity-grid">
+              <div>
+                <span className="home-section-label">IL CLUB</span>
+
+                <h2>
+                  Più di una squadra.
+                  <br />
+                  <span>Una famiglia.</span>
+                </h2>
+              </div>
+
+              <div className="home-identity-copy">
+                <p>
+                  FC Real Franuzzi torna in campo per una nuova avventura nella
+                  Lega Calcio a 8 Bergamo.
+                </p>
+
+                <p>
+                  Ambizione, appartenenza e voglia di divertirsi. Dentro e fuori
+                  dal campo.
+                </p>
+
+                <Link to="/contatti">
+                  Seguici durante il percorso <span>→</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="home-manifesto">
+          <div className="home-manifesto-track">
+            <span>¡HALA REAL!</span>
+            <span>¡HALA REAL!</span>
+            <span>¡HALA REAL!</span>
+            <span>¡HALA REAL!</span>
+            <span>¡HALA REAL!</span>
+            <span>¡HALA REAL!</span>
+            <span>¡HALA REAL!</span>
+            <span>¡HALA REAL!</span>
+            <span>¡HALA REAL!</span>
+            <span>¡HALA REAL!</span>
+            <span>¡HALA REAL!</span>
+            <span>¡HALA REAL!</span>
+            <span>¡HALA REAL!</span>
+            <span>¡HALA REAL!</span>
+            <span>¡HALA REAL!</span>
+            <span>¡HALA REAL!</span>
+            <span>¡HALA REAL!</span>
+          </div>
+        </section>
+      </div>
+    </>
   );
 };
 

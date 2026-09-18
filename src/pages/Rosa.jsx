@@ -1,6 +1,10 @@
 import rosa from "../data/rosa.json";
+
 import PageHero from "../components/PageHero";
+import Seo from "../components/Seo";
+
 import fallbackImage from "../assets/imgs/user.webp";
+
 import "../styles/rosa.css";
 
 const playerImages = import.meta.glob("../assets/players/*.webp", {
@@ -52,97 +56,108 @@ const sections = [
 
 const Rosa = () => {
   return (
-    <div className="rosa-page">
-      <PageHero
-        titleTop="LA NOSTRA"
-        titleHighlight="ROSA"
-        description="I protagonisti della nuova stagione del FC Real Franuzzi."
-        backgroundText="TEAM"
+    <>
+      <Seo
+        title="Rosa FC Real Franuzzi | Calcio a 8 Bergamo"
+        description="Scopri la rosa ufficiale del FC Real Franuzzi, squadra di calcio a 8 di Bergamo: giocatori, ruoli e staff della nuova stagione."
+        path="/rosa"
+        keywords="rosa FC Real Franuzzi, giocatori Real Franuzzi, FC Real Franuzzi Bergamo, calcio a 8 Bergamo, squadra calcio a 8 Bergamo, Lega Calcio a 8 Bergamo"
       />
 
-      <section className="rosa-content">
-        <div className="page-container">
-          {sections.map((section) => {
-            const people = rosa.filter((person) =>
-              section.ruoli.includes(person.ruolo),
-            );
+      <div className="rosa-page">
+        <PageHero
+          titleTop="LA NOSTRA"
+          titleHighlight="ROSA"
+          description="I protagonisti della nuova stagione del FC Real Franuzzi."
+          backgroundText="TEAM"
+        />
 
-            if (people.length === 0) {
-              return null;
-            }
+        <section className="rosa-content">
+          <div className="page-container">
+            {sections.map((section) => {
+              const people = rosa.filter((person) =>
+                section.ruoli.includes(person.ruolo),
+              );
 
-            return (
-              <div className="rosa-role-section" key={section.titolo}>
-                <div className="rosa-role-header">
-                  <h2>{section.titolo}</h2>
-                </div>
+              if (people.length === 0) {
+                return null;
+              }
 
-                <div className="rosa-grid">
-                  {people.map((person, index) => {
-                    const firstImage = getImage(person["immagine-1"]);
+              return (
+                <div className="rosa-role-section" key={section.titolo}>
+                  <div className="rosa-role-header">
+                    <h2>{section.titolo}</h2>
+                  </div>
 
-                    const secondImage = person["immagine-2"]
-                      ? getImage(person["immagine-2"])
-                      : firstImage;
+                  <div className="rosa-grid">
+                    {people.map((person, index) => {
+                      const firstImage = getImage(person["immagine-1"]);
 
-                    const fullName = `${person.nome} ${person.cognome}`.trim();
+                      const secondImage = person["immagine-2"]
+                        ? getImage(person["immagine-2"])
+                        : firstImage;
 
-                    const hasSecondImage =
-                      person["immagine-2"] && secondImage !== firstImage;
+                      const fullName =
+                        `${person.nome} ${person.cognome}`.trim();
 
-                    return (
-                      <article
-                        className="player-card"
-                        key={`${person.nome}-${person.cognome}-${index}`}
-                      >
-                        <div className="player-image-wrapper">
-                          <img
-                            src={firstImage}
-                            alt={fullName}
-                            className="player-image player-image-primary"
-                            loading="lazy"
-                          />
+                      const hasSecondImage =
+                        Boolean(person["immagine-2"]) &&
+                        secondImage !== firstImage;
 
-                          {hasSecondImage && (
+                      return (
+                        <article
+                          className="player-card"
+                          key={`${person.nome}-${person.cognome}-${index}`}
+                        >
+                          <div className="player-image-wrapper">
                             <img
-                              src={secondImage}
-                              alt=""
-                              aria-hidden="true"
-                              className="player-image player-image-secondary"
+                              src={firstImage}
+                              alt={fullName}
+                              className="player-image player-image-primary"
                               loading="lazy"
                             />
-                          )}
 
-                          <div className="player-image-overlay"></div>
+                            {hasSecondImage && (
+                              <img
+                                src={secondImage}
+                                alt=""
+                                aria-hidden="true"
+                                className="player-image player-image-secondary"
+                                loading="lazy"
+                              />
+                            )}
 
-                          {person.numero !== null && (
-                            <span className="player-number">
-                              {person.numero}
-                            </span>
-                          )}
+                            <div className="player-image-overlay"></div>
 
-                          <span className="player-role">{person.ruolo}</span>
-                        </div>
+                            {person.numero !== null && (
+                              <span className="player-number">
+                                {person.numero}
+                              </span>
+                            )}
 
-                        <div className="player-info">
-                          <h3>
-                            {person.nome && <span>{person.nome}</span>}
+                            <span className="player-role">{person.ruolo}</span>
+                          </div>
 
-                            <strong>{person.cognome}</strong>
-                          </h3>
+                          <div className="player-info">
+                            <h3>
+                              {person.nome && <span>{person.nome}</span>}
 
-                          {person.descrizione && <p>{person.descrizione}</p>}
-                        </div>
-                      </article>
-                    );
-                  })}
+                              <strong>{person.cognome}</strong>
+                            </h3>
+
+                            {person.descrizione && <p>{person.descrizione}</p>}
+                          </div>
+                        </article>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-    </div>
+              );
+            })}
+          </div>
+        </section>
+      </div>
+    </>
   );
 };
 

@@ -1,7 +1,10 @@
 import PageHero from "../components/PageHero";
+import Seo from "../components/Seo";
+
 import rosa from "../data/rosa.json";
 import statistiche from "../data/statistiche.json";
 import classificaData from "../data/classifica.json";
+
 import "../styles/statistiche.css";
 
 const ruoliGiocatori = [
@@ -68,190 +71,198 @@ const Statistiche = () => {
     });
 
   return (
-    <div className="statistiche-page">
-      <PageHero
-        titleTop="I NOSTRI"
-        titleHighlight="NUMERI."
-        description="Classifica, gol, assist e presenze dei protagonisti della stagione."
-        backgroundText="STATS"
+    <>
+      <Seo
+        title="Classifica e Statistiche FC Real Franuzzi | Calcio a 8 Bergamo"
+        description="Consulta classifica, gol, assist, presenze e statistiche del FC Real Franuzzi nella Lega Calcio a 8 Bergamo."
+        path="/statistiche"
+        keywords="statistiche FC Real Franuzzi, classifica FC Real Franuzzi, classifica calcio a 8 Bergamo, marcatori calcio a 8 Bergamo, risultati calcio a 8 Bergamo, Lega Calcio a 8 Bergamo"
       />
 
-      <section className="statistiche-content">
-        <div className="page-container">
-          <nav
-            className="statistiche-navigation"
-            aria-label="Navigazione statistiche"
-          >
-            <a href="#classifica-generale">
-              Classifica
-              <span>↓</span>
-            </a>
+      <div className="statistiche-page">
+        <PageHero
+          titleTop="I NOSTRI"
+          titleHighlight="NUMERI."
+          description="Classifica, gol, assist e presenze dei protagonisti della stagione."
+          backgroundText="STATS"
+        />
 
-            <a href="#classifica-marcatori">
-              Marcatori
-              <span>↓</span>
-            </a>
-          </nav>
+        <section className="statistiche-content">
+          <div className="page-container">
+            <nav
+              className="statistiche-navigation"
+              aria-label="Navigazione statistiche"
+            >
+              <a href="#classifica-generale">
+                Classifica
+                <span>↓</span>
+              </a>
 
-          {/* CLASSIFICA GENERALE */}
+              <a href="#classifica-marcatori">
+                Marcatori
+                <span>↓</span>
+              </a>
+            </nav>
 
-          <section className="statistiche-section" id="classifica-generale">
-            <div className="statistiche-heading">
-              <div>
-                <span>STAGIONE</span>
-                <h2>Classifica generale</h2>
-              </div>
-            </div>
-
-            <div className="campionato-wrapper">
-              <div className="campionato-header">
-                <span>Pos.</span>
-                <span>Squadra</span>
-                <span>PG</span>
-                <span>V</span>
-                <span>N</span>
-                <span>P</span>
-                <span>GF</span>
-                <span>GS</span>
-                <span>DR</span>
-                <span>PT</span>
+            {/* CLASSIFICA GENERALE */}
+            <section className="statistiche-section" id="classifica-generale">
+              <div className="statistiche-heading">
+                <div>
+                  <span>STAGIONE</span>
+                  <h2>Classifica generale</h2>
+                </div>
               </div>
 
-              <div className="campionato-body">
-                {classificaGenerale.map((squadra, index) => {
-                  const isRealFranuzzi = squadra.squadra === "FC Real Franuzzi";
+              <div className="campionato-wrapper">
+                <div className="campionato-header">
+                  <span>Pos.</span>
+                  <span>Squadra</span>
+                  <span>PG</span>
+                  <span>V</span>
+                  <span>N</span>
+                  <span>P</span>
+                  <span>GF</span>
+                  <span>GS</span>
+                  <span>DR</span>
+                  <span>PT</span>
+                </div>
 
-                  return (
-                    <div
-                      className={`campionato-row ${
-                        isRealFranuzzi ? "campionato-row-real" : ""
-                      }`}
-                      key={squadra.squadra}
-                      style={{
-                        animationDelay: `${index * 0.06}s`,
-                      }}
-                    >
-                      <div className="campionato-posizione">{index + 1}</div>
+                <div className="campionato-body">
+                  {classificaGenerale.map((squadra, index) => {
+                    const isRealFranuzzi =
+                      squadra.squadra === "FC Real Franuzzi";
 
-                      <div className="campionato-squadra">
-                        <strong>{squadra.squadra}</strong>
-                      </div>
+                    return (
+                      <div
+                        className={`campionato-row ${
+                          isRealFranuzzi ? "campionato-row-real" : ""
+                        }`}
+                        key={squadra.squadra}
+                        style={{
+                          animationDelay: `${index * 0.06}s`,
+                        }}
+                      >
+                        <div className="campionato-posizione">{index + 1}</div>
 
-                      <div>{squadra.giocate}</div>
-                      <div>{squadra.vittorie}</div>
-                      <div>{squadra.pareggi}</div>
-                      <div>{squadra.sconfitte}</div>
-                      <div>{squadra.golFatti}</div>
-                      <div>{squadra.golSubiti}</div>
+                        <div className="campionato-squadra">
+                          <strong>{squadra.squadra}</strong>
+                        </div>
 
-                      <div>
-                        {squadra.differenzaReti > 0
-                          ? `+${squadra.differenzaReti}`
-                          : squadra.differenzaReti}
-                      </div>
-
-                      <div className="campionato-punti">{squadra.punti}</div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            <p className="statistiche-note">
-              PG = Partite giocate · V = Vittorie · N = Pareggi · P = Sconfitte
-              · GF = Gol fatti · GS = Gol subiti · DR = Differenza reti · PT =
-              Punti
-            </p>
-          </section>
-
-          {/* CLASSIFICA MARCATORI */}
-
-          <section className="statistiche-section" id="classifica-marcatori">
-            <div className="statistiche-heading">
-              <div>
-                <span>FC REAL FRANUZZI</span>
-                <h2>Classifica marcatori</h2>
-              </div>
-
-              <p>Ordinata per gol, assist e presenze.</p>
-            </div>
-
-            <div className="classifica-wrapper">
-              <div className="classifica-header">
-                <span className="classifica-posizione">Pos.</span>
-
-                <span className="classifica-giocatore">Giocatore</span>
-
-                <span>PG</span>
-                <span>Assist</span>
-                <span>Gol</span>
-              </div>
-
-              <div className="classifica-body">
-                {classificaMarcatori.map((giocatore, index) => {
-                  const nomeCompleto =
-                    `${giocatore.nome} ${giocatore.cognome}`.trim();
-
-                  return (
-                    <div
-                      className={`classifica-row ${
-                        index < 3 ? `classifica-top-${index + 1}` : ""
-                      }`}
-                      key={nomeCompleto}
-                      style={{
-                        animationDelay: `${index * 0.06}s`,
-                      }}
-                    >
-                      <div className="classifica-posizione">
-                        <span>{index + 1}</span>
-                      </div>
-
-                      <div className="classifica-giocatore">
-                        {giocatore.numero !== null && (
-                          <span className="classifica-numero">
-                            {giocatore.numero}
-                          </span>
-                        )}
+                        <div>{squadra.giocate}</div>
+                        <div>{squadra.vittorie}</div>
+                        <div>{squadra.pareggi}</div>
+                        <div>{squadra.sconfitte}</div>
+                        <div>{squadra.golFatti}</div>
+                        <div>{squadra.golSubiti}</div>
 
                         <div>
-                          {giocatore.nome && (
-                            <span className="classifica-nome">
-                              {giocatore.nome}
+                          {squadra.differenzaReti > 0
+                            ? `+${squadra.differenzaReti}`
+                            : squadra.differenzaReti}
+                        </div>
+
+                        <div className="campionato-punti">{squadra.punti}</div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <p className="statistiche-note">
+                PG = Partite giocate · V = Vittorie · N = Pareggi · P =
+                Sconfitte · GF = Gol fatti · GS = Gol subiti · DR = Differenza
+                reti · PT = Punti
+              </p>
+            </section>
+
+            {/* CLASSIFICA MARCATORI */}
+            <section className="statistiche-section" id="classifica-marcatori">
+              <div className="statistiche-heading">
+                <div>
+                  <span>FC REAL FRANUZZI</span>
+                  <h2>Classifica marcatori</h2>
+                </div>
+
+                <p>Ordinata per gol, assist e presenze.</p>
+              </div>
+
+              <div className="classifica-wrapper">
+                <div className="classifica-header">
+                  <span className="classifica-posizione">Pos.</span>
+
+                  <span className="classifica-giocatore">Giocatore</span>
+
+                  <span>PG</span>
+                  <span>Assist</span>
+                  <span>Gol</span>
+                </div>
+
+                <div className="classifica-body">
+                  {classificaMarcatori.map((giocatore, index) => {
+                    const nomeCompleto =
+                      `${giocatore.nome} ${giocatore.cognome}`.trim();
+
+                    return (
+                      <div
+                        className={`classifica-row ${
+                          index < 3 ? `classifica-top-${index + 1}` : ""
+                        }`}
+                        key={nomeCompleto}
+                        style={{
+                          animationDelay: `${index * 0.06}s`,
+                        }}
+                      >
+                        <div className="classifica-posizione">
+                          <span>{index + 1}</span>
+                        </div>
+
+                        <div className="classifica-giocatore">
+                          {giocatore.numero !== null && (
+                            <span className="classifica-numero">
+                              {giocatore.numero}
                             </span>
                           )}
 
-                          <strong>{giocatore.cognome}</strong>
+                          <div>
+                            {giocatore.nome && (
+                              <span className="classifica-nome">
+                                {giocatore.nome}
+                              </span>
+                            )}
+
+                            <strong>{giocatore.cognome}</strong>
+                          </div>
+                        </div>
+
+                        <div className="classifica-stat">
+                          <span className="mobile-label">Partite</span>
+
+                          {giocatore.presenze}
+                        </div>
+
+                        <div className="classifica-stat">
+                          <span className="mobile-label">Assist</span>
+
+                          {giocatore.assist}
+                        </div>
+
+                        <div className="classifica-stat classifica-gol">
+                          <span className="mobile-label">Gol</span>
+
+                          {giocatore.gol}
                         </div>
                       </div>
-
-                      <div className="classifica-stat">
-                        <span className="mobile-label">Partite</span>
-
-                        {giocatore.presenze}
-                      </div>
-
-                      <div className="classifica-stat">
-                        <span className="mobile-label">Assist</span>
-
-                        {giocatore.assist}
-                      </div>
-
-                      <div className="classifica-stat classifica-gol">
-                        <span className="mobile-label">Gol</span>
-
-                        {giocatore.gol}
-                      </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
               </div>
-            </div>
 
-            <p className="statistiche-note">PG = Partite giocate</p>
-          </section>
-        </div>
-      </section>
-    </div>
+              <p className="statistiche-note">PG = Partite giocate</p>
+            </section>
+          </div>
+        </section>
+      </div>
+    </>
   );
 };
 
