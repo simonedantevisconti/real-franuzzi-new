@@ -5,8 +5,8 @@
     "ruolo": "Portiere",
     "numero": 1,
     "descrizione": "",
-    "immagine-1": "",
-    "immagine-2": ""
+    "immagine-1": "alex-fornasier-1.webp",
+    "immagine-2": "alex-fornasier-2.webp"
   },
   {
     "nome": "Stefano",
@@ -14,8 +14,8 @@
     "ruolo": "Portiere",
     "numero": 12,
     "descrizione": "",
-    "immagine-1": "",
-    "immagine-2": ""
+    "immagine-1": "stefano-mazzolin-1.webp",
+    "immagine-2": "stefano-mazzolin-2.webp"
   },
   {
     "nome": "Giorgio",
@@ -45,15 +45,6 @@
     "immagine-2": "matteo-fumagalli-2.webp"
   },
   {
-    "nome": "Peter",
-    "cognome": "Sohna",
-    "ruolo": "Difensore",
-    "numero": 3,
-    "descrizione": "",
-    "immagine-1": "",
-    "immagine-2": ""
-  },
-  {
     "nome": "Giorgio",
     "cognome": "Chignoli",
     "ruolo": "Difensore",
@@ -61,6 +52,15 @@
     "descrizione": "",
     "immagine-1": "giorgio-chignoli-1.webp",
     "immagine-2": "giorgio-chignoli-2.webp"
+  },
+  {
+    "nome": "Peter",
+    "cognome": "Sohna",
+    "ruolo": "Difensore",
+    "numero": 3,
+    "descrizione": "",
+    "immagine-1": "",
+    "immagine-2": ""
   },
   {
     "nome": "Fabio",
@@ -86,8 +86,8 @@
     "ruolo": "Centrocampista",
     "numero": 7,
     "descrizione": "",
-    "immagine-1": "",
-    "immagine-2": ""
+    "immagine-1": "yuri-pepe-1.webp",
+    "immagine-2": "yuri-pepe-2.webp"
   },
   {
     "nome": "Matteo",
