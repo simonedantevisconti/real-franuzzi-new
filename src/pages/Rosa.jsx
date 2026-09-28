@@ -67,7 +67,7 @@ const Rosa = () => {
       <div className="rosa-page">
         <PageHero
           titleTop="LA NOSTRA"
-          titleHighlight="ROSA"
+          titleHighlight="ROSA."
           description="I protagonisti della nuova stagione del FC Real Franuzzi."
           backgroundText="TEAM"
         />
