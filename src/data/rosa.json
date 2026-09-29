@@ -144,15 +144,6 @@
     "immagine-2": "zeno-crippa-2.webp"
   },
   {
-    "nome": "Cristian",
-    "cognome": "Sciortino",
-    "ruolo": "Presidente",
-    "numero": null,
-    "descrizione": "",
-    "immagine-1": "",
-    "immagine-2": ""
-  },
-  {
     "nome": "Francesco",
     "cognome": "Lamanuzzi",
     "ruolo": "Allenatore",
@@ -173,7 +164,7 @@
   {
     "nome": "Emanuele",
     "cognome": "Francesconi",
-    "ruolo": "Direttore Sportivo",
+    "ruolo": "Presidente",
     "numero": null,
     "descrizione": "",
     "immagine-1": "emanuele-francesconi-1.webp",
