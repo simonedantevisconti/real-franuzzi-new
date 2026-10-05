@@ -1,5 +1,35 @@
 [
   {
+    "squadra": "Black Eagles",
+    "giocate": 0,
+    "vittorie": 0,
+    "pareggi": 0,
+    "sconfitte": 0,
+    "golFatti": 0,
+    "golSubiti": 0,
+    "punti": 0
+  },
+  {
+    "squadra": "Briganti FC",
+    "giocate": 0,
+    "vittorie": 0,
+    "pareggi": 0,
+    "sconfitte": 0,
+    "golFatti": 0,
+    "golSubiti": 0,
+    "punti": 0
+  },
+  {
+    "squadra": "Colpo Alto",
+    "giocate": 0,
+    "vittorie": 0,
+    "pareggi": 0,
+    "sconfitte": 0,
+    "golFatti": 0,
+    "golSubiti": 0,
+    "punti": 0
+  },
+  {
     "squadra": "FC Real Franuzzi",
     "giocate": 0,
     "vittorie": 0,
@@ -10,7 +40,7 @@
     "punti": 0
   },
   {
-    "squadra": "Squadra 1",
+    "squadra": "FC Tribulandia",
     "giocate": 0,
     "vittorie": 0,
     "pareggi": 0,
@@ -20,7 +50,7 @@
     "punti": 0
   },
   {
-    "squadra": "Squadra 2",
+    "squadra": "Fury SC Bergamo",
     "giocate": 0,
     "vittorie": 0,
     "pareggi": 0,
@@ -30,7 +60,7 @@
     "punti": 0
   },
   {
-    "squadra": "Squadra 3",
+    "squadra": "Galacticos BG",
     "giocate": 0,
     "vittorie": 0,
     "pareggi": 0,
@@ -40,7 +70,7 @@
     "punti": 0
   },
   {
-    "squadra": "Squadra 4",
+    "squadra": "Inzago Calcio a 8",
     "giocate": 0,
     "vittorie": 0,
     "pareggi": 0,
@@ -50,7 +80,27 @@
     "punti": 0
   },
   {
-    "squadra": "Squadra 5",
+    "squadra": "Leoni dell'Atlante",
+    "giocate": 0,
+    "vittorie": 0,
+    "pareggi": 0,
+    "sconfitte": 0,
+    "golFatti": 0,
+    "golSubiti": 0,
+    "punti": 0
+  },
+  {
+    "squadra": "Onis Sportswear",
+    "giocate": 0,
+    "vittorie": 0,
+    "pareggi": 0,
+    "sconfitte": 0,
+    "golFatti": 0,
+    "golSubiti": 0,
+    "punti": 0
+  },
+  {
+    "squadra": "Trezzano Angels",
     "giocate": 0,
     "vittorie": 0,
     "pareggi": 0,
