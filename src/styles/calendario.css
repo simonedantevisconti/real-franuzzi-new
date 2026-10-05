@@ -1,5 +1,6 @@
 .calendario-page {
   min-height: 100vh;
+
   overflow: hidden;
 }
 
@@ -43,6 +44,222 @@
   color: var(--color-text-muted);
 
   line-height: 1.7;
+}
+
+/* NEXT MATCH */
+
+.next-match {
+  position: relative;
+
+  margin-bottom: 100px;
+
+  padding: 30px 35px 35px;
+
+  background: rgba(177, 162, 1, 0.06);
+
+  border: 1px solid rgba(177, 162, 1, 0.3);
+  border-radius: 4px;
+
+  overflow: hidden;
+}
+
+.next-match::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: var(--color-yellow);
+}
+
+.next-match-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 35px;
+
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.next-match-header > span:first-child {
+  color: var(--color-yellow);
+
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.next-match-giornata {
+  color: var(--color-text-muted);
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.next-match-main {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    180px
+    minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 40px;
+}
+
+.next-match-team {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.next-match-team > span {
+  color: var(--color-text-muted);
+
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.next-match-team strong {
+  color: var(--color-white);
+
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.1;
+}
+
+.next-match-team-real strong {
+  color: var(--color-yellow);
+}
+
+.next-match-team-away {
+  align-items: flex-end;
+
+  text-align: right;
+}
+
+.next-match-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 5px;
+
+  text-align: center;
+}
+
+.next-match-date {
+  color: var(--color-text-muted);
+
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.next-match-vs {
+  color: var(--color-white);
+
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.next-match-time {
+  color: var(--color-yellow);
+
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* NEXT MATCH LOCATION */
+
+.next-match-location {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  margin-top: 32px;
+  padding-top: 22px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.next-match-location-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.next-match-location-info > span {
+  color: var(--color-text-muted);
+
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.next-match-location-info strong {
+  color: var(--color-white);
+
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.next-match-location-info small {
+  color: var(--color-text-muted);
+
+  font-size: 0.75rem;
+}
+
+.next-match-directions {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 16px;
+
+  border: 1px solid var(--color-yellow);
+
+  color: var(--color-yellow);
+
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition:
+    background var(--transition-normal),
+    color var(--transition-normal);
+}
+
+.next-match-directions:hover {
+  background: var(--color-yellow);
+
+  color: var(--color-bg);
 }
 
 /* FASE */
@@ -170,8 +387,9 @@
 }
 
 .match-team-away {
-  text-align: right;
   align-items: flex-end;
+
+  text-align: right;
 }
 
 .match-team-label {
@@ -248,6 +466,79 @@
   font-size: 1rem;
 }
 
+/* LOCATION */
+
+.match-location {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  margin-top: 24px;
+  padding-top: 18px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.match-location-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.match-location-label {
+  color: var(--color-text-muted);
+
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.match-location-info strong {
+  color: var(--color-white);
+
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.match-address {
+  color: var(--color-text-muted);
+
+  font-size: 0.75rem;
+}
+
+.match-directions {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 14px;
+
+  border: 1px solid var(--color-yellow);
+
+  color: var(--color-yellow);
+
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition:
+    background var(--transition-normal),
+    color var(--transition-normal);
+}
+
+.match-directions:hover {
+  background: var(--color-yellow);
+
+  color: var(--color-bg);
+}
+
 /* RESULT */
 
 .match-result-label {
@@ -284,6 +575,38 @@
   border-color: rgba(177, 162, 1, 0.3);
 }
 
+/* RIPOSO */
+
+.match-rest {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.match-rest-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.match-rest-content span {
+  color: var(--color-white);
+
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+.match-rest-content strong {
+  color: var(--color-text-muted);
+
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
 /* TABLET */
 
 @media (max-width: 767px) {
@@ -293,6 +616,33 @@
 
   .calendario-intro {
     margin-bottom: 65px;
+  }
+
+  .next-match {
+    margin-bottom: 70px;
+
+    padding: 25px 18px 28px;
+  }
+
+  .next-match-header {
+    margin-bottom: 28px;
+  }
+
+  .next-match-main {
+    grid-template-columns:
+      minmax(0, 1fr)
+      80px
+      minmax(0, 1fr);
+
+    gap: 10px;
+  }
+
+  .next-match-team strong {
+    font-size: 1.2rem;
+  }
+
+  .next-match-vs {
+    font-size: 1.4rem;
   }
 
   .calendario-fase + .calendario-fase {
@@ -325,6 +675,80 @@
 /* MOBILE */
 
 @media (max-width: 480px) {
+  .next-match {
+    padding: 22px 12px 25px;
+  }
+
+  .next-match-header {
+    margin-bottom: 24px;
+  }
+
+  .next-match-header > span:first-child {
+    font-size: 0.62rem;
+  }
+
+  .next-match-giornata {
+    font-size: 0.62rem;
+  }
+
+  .next-match-main {
+    grid-template-columns:
+      minmax(0, 1fr)
+      58px
+      minmax(0, 1fr);
+
+    gap: 6px;
+  }
+
+  .next-match-team > span {
+    font-size: 0.52rem;
+  }
+
+  .next-match-team strong {
+    font-size: 0.95rem;
+  }
+
+  .next-match-date {
+    font-size: 0.6rem;
+  }
+
+  .next-match-vs {
+    font-size: 1.1rem;
+  }
+
+  .next-match-time {
+    font-size: 0.75rem;
+  }
+
+  .next-match-location {
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 25px;
+    padding-top: 18px;
+  }
+
+  .next-match-location-info {
+    min-width: 0;
+  }
+
+  .next-match-location-info strong {
+    font-size: 0.8rem;
+  }
+
+  .next-match-location-info small {
+    font-size: 0.62rem;
+  }
+
+  .next-match-directions {
+    flex-shrink: 0;
+
+    padding: 7px 10px;
+
+    font-size: 0.55rem;
+  }
+
   .match-card-top {
     margin-bottom: 20px;
   }
@@ -351,5 +775,41 @@
 
   .match-score span {
     font-size: 1.45rem;
+  }
+
+  .match-location {
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 20px;
+  }
+
+  .match-location-info {
+    min-width: 0;
+  }
+
+  .match-location-info strong {
+    font-size: 0.8rem;
+  }
+
+  .match-address {
+    font-size: 0.65rem;
+  }
+
+  .match-directions {
+    flex-shrink: 0;
+
+    padding: 7px 10px;
+
+    font-size: 0.55rem;
+  }
+
+  .match-rest-content span {
+    font-size: 0.95rem;
+  }
+
+  .match-rest-content strong {
+    font-size: 0.65rem;
   }
 }

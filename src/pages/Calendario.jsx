@@ -10,7 +10,64 @@ const Calendario = () => {
 
   const ritorno = calendario.filter((partita) => partita.fase === "Ritorno");
 
+  const parseDataPartita = (partita) => {
+    if (!partita.data) {
+      return null;
+    }
+
+    const [giorno, mese, anno] = partita.data.split("/").map(Number);
+
+    const [ore, minuti] = partita.ora
+      ? partita.ora.split(":").map(Number)
+      : [0, 0];
+
+    return new Date(anno, mese - 1, giorno, ore, minuti);
+  };
+
+  const adesso = new Date();
+
+  const prossimaPartita = calendario
+    .filter((partita) => partita.data)
+    .map((partita) => ({
+      ...partita,
+      dataCompleta: parseDataPartita(partita),
+    }))
+    .filter((partita) => partita.dataCompleta >= adesso)
+    .sort((a, b) => a.dataCompleta - b.dataCompleta)[0];
+
+  const getIndicazioniUrl = (indirizzo) => {
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+      indirizzo,
+    )}`;
+  };
+
   const renderPartita = (partita, index) => {
+    const riposo = partita.trasferta === "RIPOSO";
+
+    if (riposo) {
+      return (
+        <article
+          className="match-card match-rest"
+          key={partita.giornata}
+          style={{
+            animationDelay: `${index * 0.08}s`,
+          }}
+        >
+          <div className="match-card-top">
+            <span className="match-giornata">Giornata {partita.giornata}</span>
+
+            <span className="match-date">Riposo</span>
+          </div>
+
+          <div className="match-rest-content">
+            <span>FC Real Franuzzi</span>
+
+            <strong>RIPOSO</strong>
+          </div>
+        </article>
+      );
+    }
+
     const partitaGiocata =
       partita.golCasa !== null && partita.golTrasferta !== null;
 
@@ -86,10 +143,34 @@ const Calendario = () => {
           </div>
         </div>
 
+        {partita.luogo && partita.indirizzo && (
+          <div className="match-location">
+            <div className="match-location-info">
+              <span className="match-location-label">Campo</span>
+
+              <strong>{partita.luogo}</strong>
+
+              <span className="match-address">{partita.indirizzo}</span>
+            </div>
+
+            <a
+              className="match-directions"
+              href={getIndicazioniUrl(partita.indirizzo)}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Indicazioni per ${partita.luogo}`}
+            >
+              Indicazioni
+            </a>
+          </div>
+        )}
+
         {partitaGiocata && (
           <div className="match-result-label">
             {golReal > golAvversario && "VITTORIA"}
+
             {golReal < golAvversario && "SCONFITTA"}
+
             {golReal === golAvversario && "PAREGGIO"}
           </div>
         )}
@@ -126,6 +207,78 @@ const Calendario = () => {
                 Bergamo.
               </p>
             </div>
+
+            {prossimaPartita && (
+              <div className="next-match">
+                <div className="next-match-header">
+                  <span>PROSSIMA GIORNATA</span>
+
+                  <span className="next-match-giornata">
+                    Giornata {prossimaPartita.giornata}
+                  </span>
+                </div>
+
+                <div className="next-match-main">
+                  <div
+                    className={`next-match-team ${
+                      prossimaPartita.casa === "FC Real Franuzzi"
+                        ? "next-match-team-real"
+                        : ""
+                    }`}
+                  >
+                    <span>Casa</span>
+
+                    <strong>{prossimaPartita.casa}</strong>
+                  </div>
+
+                  <div className="next-match-center">
+                    <span className="next-match-date">
+                      {prossimaPartita.data}
+                    </span>
+
+                    <span className="next-match-vs">VS</span>
+
+                    <span className="next-match-time">
+                      {prossimaPartita.ora}
+                    </span>
+                  </div>
+
+                  <div
+                    className={`next-match-team next-match-team-away ${
+                      prossimaPartita.trasferta === "FC Real Franuzzi"
+                        ? "next-match-team-real"
+                        : ""
+                    }`}
+                  >
+                    <span>Trasferta</span>
+
+                    <strong>{prossimaPartita.trasferta}</strong>
+                  </div>
+                </div>
+
+                {prossimaPartita.luogo && prossimaPartita.indirizzo && (
+                  <div className="next-match-location">
+                    <div className="next-match-location-info">
+                      <span>Campo</span>
+
+                      <strong>{prossimaPartita.luogo}</strong>
+
+                      <small>{prossimaPartita.indirizzo}</small>
+                    </div>
+
+                    <a
+                      className="next-match-directions"
+                      href={getIndicazioniUrl(prossimaPartita.indirizzo)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Indicazioni per ${prossimaPartita.luogo}`}
+                    >
+                      Indicazioni
+                    </a>
+                  </div>
+                )}
+              </div>
+            )}
 
             <div className="calendario-fase">
               <div className="calendario-fase-header">
