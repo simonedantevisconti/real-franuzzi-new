@@ -1,9 +1,16 @@
+import { useState } from "react";
+
+import CompetitionToggle from "../components/CompetitionToggle";
 import PageHero from "../components/PageHero";
 import Seo from "../components/Seo";
 
 import rosa from "../data/rosa.json";
-import statistiche from "../data/statistiche.json";
-import classificaData from "../data/classifica.json";
+
+import statisticheCampionato from "../data/statistiche.json";
+import statisticheCoppa from "../data/statistiche-coppa.json";
+
+import classificaCampionato from "../data/classifica.json";
+import classificaCoppa from "../data/classifica-coppa.json";
 
 import "../styles/statistiche.css";
 
@@ -15,6 +22,14 @@ const ruoliGiocatori = [
 ];
 
 const Statistiche = () => {
+  const [competizione, setCompetizione] = useState("Campionato");
+
+  const statistiche =
+    competizione === "Campionato" ? statisticheCampionato : statisticheCoppa;
+
+  const classificaData =
+    competizione === "Campionato" ? classificaCampionato : classificaCoppa;
+
   const classificaMarcatori = rosa
     .filter((persona) => ruoliGiocatori.includes(persona.ruolo))
     .map((giocatore) => {
@@ -74,9 +89,9 @@ const Statistiche = () => {
     <>
       <Seo
         title="Classifica e Statistiche FC Real Franuzzi | Calcio a 8 Bergamo"
-        description="Consulta classifica, gol, assist, presenze e statistiche del FC Real Franuzzi nella Lega Calcio a 8 Bergamo."
+        description="Consulta classifica, gol, assist, presenze e statistiche del FC Real Franuzzi."
         path="/statistiche"
-        keywords="statistiche FC Real Franuzzi, classifica FC Real Franuzzi, classifica calcio a 8 Bergamo, marcatori calcio a 8 Bergamo, risultati calcio a 8 Bergamo, Lega Calcio a 8 Bergamo"
+        keywords="statistiche FC Real Franuzzi, classifica FC Real Franuzzi, calcio a 8 Bergamo, Coppa calcio a 8 Bergamo"
       />
 
       <div className="statistiche-page">
@@ -89,6 +104,13 @@ const Statistiche = () => {
 
         <section className="statistiche-content">
           <div className="page-container">
+            <div className="statistiche-competition">
+              <CompetitionToggle
+                value={competizione}
+                onChange={setCompetizione}
+              />
+            </div>
+
             <nav
               className="statistiche-navigation"
               aria-label="Navigazione statistiche"
@@ -104,11 +126,11 @@ const Statistiche = () => {
               </a>
             </nav>
 
-            {/* CLASSIFICA GENERALE */}
             <section className="statistiche-section" id="classifica-generale">
               <div className="statistiche-heading">
                 <div>
-                  <span>STAGIONE</span>
+                  <span>{competizione.toUpperCase()}</span>
+
                   <h2>Classifica generale</h2>
                 </div>
               </div>
@@ -175,11 +197,11 @@ const Statistiche = () => {
               </p>
             </section>
 
-            {/* CLASSIFICA MARCATORI */}
             <section className="statistiche-section" id="classifica-marcatori">
               <div className="statistiche-heading">
                 <div>
-                  <span>FC REAL FRANUZZI</span>
+                  <span>FC REAL FRANUZZI · {competizione.toUpperCase()}</span>
+
                   <h2>Classifica marcatori</h2>
                 </div>
 

@@ -2,6 +2,7 @@
   {
     "giornata": 1,
     "fase": "Andata",
+    "competizione": "Campionato",
     "data": "21/10/2026",
     "ora": "21:00",
     "casa": "FC Real Franuzzi",
@@ -14,6 +15,7 @@
   {
     "giornata": 2,
     "fase": "Andata",
+    "competizione": "Campionato",
     "data": "28/10/2026",
     "ora": "22:00",
     "casa": "Trezzano Angels",
@@ -26,18 +28,20 @@
   {
     "giornata": 3,
     "fase": "Andata",
+    "competizione": "Campionato",
     "data": "06/11/2026",
     "ora": "21:30",
     "casa": "Onis Sportswear",
     "trasferta": "FC Real Franuzzi",
     "luogo": "Valtesse",
-    "indirizzo": null,
+    "indirizzo": "Via Zarda 1, Bergamo BG",
     "golCasa": null,
     "golTrasferta": null
   },
   {
     "giornata": 4,
     "fase": "Andata",
+    "competizione": "Campionato",
     "data": null,
     "ora": null,
     "casa": "FC Real Franuzzi",
@@ -50,6 +54,7 @@
   {
     "giornata": 5,
     "fase": "Andata",
+    "competizione": "Campionato",
     "data": "18/11/2026",
     "ora": "21:00",
     "casa": "FC Real Franuzzi",
@@ -62,18 +67,20 @@
   {
     "giornata": 6,
     "fase": "Andata",
+    "competizione": "Campionato",
     "data": "27/11/2026",
     "ora": "20:30",
     "casa": "Galacticos BG",
     "trasferta": "FC Real Franuzzi",
     "luogo": "Valtesse",
-    "indirizzo": null,
+    "indirizzo": "Via Zarda 1, Bergamo BG",
     "golCasa": null,
     "golTrasferta": null
   },
   {
     "giornata": 7,
     "fase": "Andata",
+    "competizione": "Campionato",
     "data": "02/12/2026",
     "ora": "21:00",
     "casa": "FC Real Franuzzi",
@@ -86,18 +93,20 @@
   {
     "giornata": 8,
     "fase": "Andata",
+    "competizione": "Campionato",
     "data": "10/12/2026",
     "ora": "20:00",
     "casa": "FC Tribulandia",
     "trasferta": "FC Real Franuzzi",
     "luogo": "Cassinone",
-    "indirizzo": null,
+    "indirizzo": "Via Colombaia, 24068 Cassinone BG",
     "golCasa": null,
     "golTrasferta": null
   },
   {
     "giornata": 9,
     "fase": "Andata",
+    "competizione": "Campionato",
     "data": "16/12/2026",
     "ora": "21:00",
     "casa": "FC Real Franuzzi",
@@ -110,6 +119,7 @@
   {
     "giornata": 10,
     "fase": "Andata",
+    "competizione": "Campionato",
     "data": "13/01/2027",
     "ora": "21:00",
     "casa": "Black Eagles",
@@ -122,6 +132,7 @@
   {
     "giornata": 11,
     "fase": "Andata",
+    "competizione": "Campionato",
     "data": "27/01/2027",
     "ora": "22:00",
     "casa": "FC Real Franuzzi",
@@ -134,18 +145,20 @@
   {
     "giornata": 12,
     "fase": "Ritorno",
+    "competizione": "Campionato",
     "data": "12/02/2027",
     "ora": "20:30",
     "casa": "Fury SC Bergamo",
     "trasferta": "FC Real Franuzzi",
     "luogo": "Valtesse",
-    "indirizzo": null,
+    "indirizzo": "Via Zarda 1, Bergamo BG",
     "golCasa": null,
     "golTrasferta": null
   },
   {
     "giornata": 13,
     "fase": "Ritorno",
+    "competizione": "Campionato",
     "data": "24/02/2027",
     "ora": "21:00",
     "casa": "FC Real Franuzzi",
@@ -158,6 +171,7 @@
   {
     "giornata": 14,
     "fase": "Ritorno",
+    "competizione": "Campionato",
     "data": "10/03/2027",
     "ora": "21:00",
     "casa": "FC Real Franuzzi",
@@ -170,6 +184,7 @@
   {
     "giornata": 15,
     "fase": "Ritorno",
+    "competizione": "Campionato",
     "data": null,
     "ora": null,
     "casa": "FC Real Franuzzi",
@@ -182,18 +197,20 @@
   {
     "giornata": 16,
     "fase": "Ritorno",
+    "competizione": "Campionato",
     "data": "09/04/2027",
     "ora": "20:30",
     "casa": "Briganti FC",
     "trasferta": "FC Real Franuzzi",
     "luogo": "Valtesse",
-    "indirizzo": null,
+    "indirizzo": "Via Zarda 1, Bergamo BG",
     "golCasa": null,
     "golTrasferta": null
   },
   {
     "giornata": 17,
     "fase": "Ritorno",
+    "competizione": "Campionato",
     "data": "21/04/2027",
     "ora": "22:00",
     "casa": "FC Real Franuzzi",
@@ -206,6 +223,7 @@
   {
     "giornata": 18,
     "fase": "Ritorno",
+    "competizione": "Campionato",
     "data": "05/05/2027",
     "ora": "21:00",
     "casa": "Inzago Calcio a 8",
@@ -218,6 +236,7 @@
   {
     "giornata": 19,
     "fase": "Ritorno",
+    "competizione": "Campionato",
     "data": "19/05/2027",
     "ora": "21:00",
     "casa": "FC Real Franuzzi",
@@ -230,30 +249,33 @@
   {
     "giornata": 20,
     "fase": "Ritorno",
+    "competizione": "Campionato",
     "data": "28/05/2027",
     "ora": "20:30",
     "casa": "Leoni dell'Atlante",
     "trasferta": "FC Real Franuzzi",
     "luogo": "Valtesse",
-    "indirizzo": null,
+    "indirizzo": "Via Zarda 1, Bergamo BG",
     "golCasa": null,
     "golTrasferta": null
   },
   {
     "giornata": 21,
     "fase": "Ritorno",
+    "competizione": "Campionato",
     "data": "03/06/2027",
     "ora": "20:00",
     "casa": "FC Real Franuzzi",
     "trasferta": "Trezzano Angels",
     "luogo": "Cassinone",
-    "indirizzo": null,
+    "indirizzo": "Via Colombaia, 24068 Cassinone BG",
     "golCasa": null,
     "golTrasferta": null
   },
   {
     "giornata": 22,
     "fase": "Ritorno",
+    "competizione": "Campionato",
     "data": "23/06/2027",
     "ora": "22:00",
     "casa": "Colpo Alto",

@@ -15,7 +15,7 @@
 .calendario-intro {
   max-width: 700px;
 
-  margin-bottom: 90px;
+  margin-bottom: 45px;
 }
 
 .calendario-intro > span {
@@ -44,6 +44,14 @@
   color: var(--color-text-muted);
 
   line-height: 1.7;
+}
+
+/* SWITCH */
+
+.calendario-switch {
+  display: flex;
+
+  margin-bottom: 70px;
 }
 
 /* NEXT MATCH */
@@ -259,7 +267,7 @@
 .next-match-directions:hover {
   background: var(--color-yellow);
 
-  color: var(--color-bg);
+  color: #080808;
 }
 
 /* FASE */
@@ -536,7 +544,7 @@
 .match-directions:hover {
   background: var(--color-yellow);
 
-  color: var(--color-bg);
+  color: #080808;
 }
 
 /* RESULT */
@@ -615,7 +623,11 @@
   }
 
   .calendario-intro {
-    margin-bottom: 65px;
+    margin-bottom: 35px;
+  }
+
+  .calendario-switch {
+    margin-bottom: 55px;
   }
 
   .next-match {
@@ -675,6 +687,10 @@
 /* MOBILE */
 
 @media (max-width: 480px) {
+  .calendario-switch {
+    width: 100%;
+  }
+
   .next-match {
     padding: 22px 12px 25px;
   }
@@ -724,21 +740,10 @@
     align-items: center;
 
     gap: 12px;
-
-    margin-top: 25px;
-    padding-top: 18px;
   }
 
   .next-match-location-info {
     min-width: 0;
-  }
-
-  .next-match-location-info strong {
-    font-size: 0.8rem;
-  }
-
-  .next-match-location-info small {
-    font-size: 0.62rem;
   }
 
   .next-match-directions {
@@ -781,16 +786,10 @@
     align-items: center;
 
     gap: 12px;
-
-    margin-top: 20px;
   }
 
   .match-location-info {
     min-width: 0;
-  }
-
-  .match-location-info strong {
-    font-size: 0.8rem;
   }
 
   .match-address {
