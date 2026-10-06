@@ -7,7 +7,7 @@
     "casa": "Pos. 1",
     "trasferta": "Pos. 10",
     "luogo": "Bombonera",
-    "indirizzo": null,
+    "indirizzo": "Via Tommaso Grossi 40, 24127 Bergamo BG",
     "golCasa": null,
     "golTrasferta": null
   },
@@ -59,6 +59,7 @@
     "golCasa": null,
     "golTrasferta": null
   },
+
   {
     "giornata": "C2",
     "fase": "Coppa",
@@ -67,7 +68,7 @@
     "casa": "Pos. 10",
     "trasferta": "Pos. 2",
     "luogo": "Bombonera",
-    "indirizzo": null,
+    "indirizzo": "Via Tommaso Grossi 40, 24127 Bergamo BG",
     "golCasa": null,
     "golTrasferta": null
   },
@@ -119,6 +120,7 @@
     "golCasa": null,
     "golTrasferta": null
   },
+
   {
     "giornata": "C3",
     "fase": "Coppa",
@@ -127,7 +129,7 @@
     "casa": "Pos. 3",
     "trasferta": "Pos. 10",
     "luogo": "Bombonera",
-    "indirizzo": null,
+    "indirizzo": "Via Tommaso Grossi 40, 24127 Bergamo BG",
     "golCasa": null,
     "golTrasferta": null
   },
@@ -179,6 +181,7 @@
     "golCasa": null,
     "golTrasferta": null
   },
+
   {
     "giornata": "C4",
     "fase": "Coppa",
@@ -187,7 +190,7 @@
     "casa": "Pos. 10",
     "trasferta": "Pos. 4",
     "luogo": "Bombonera",
-    "indirizzo": null,
+    "indirizzo": "Via Tommaso Grossi 40, 24127 Bergamo BG",
     "golCasa": null,
     "golTrasferta": null
   },
@@ -239,6 +242,7 @@
     "golCasa": null,
     "golTrasferta": null
   },
+
   {
     "giornata": "C5",
     "fase": "Coppa",
@@ -247,7 +251,7 @@
     "casa": "Pos. 5",
     "trasferta": "Pos. 10",
     "luogo": "Bombonera",
-    "indirizzo": null,
+    "indirizzo": "Via Tommaso Grossi 40, 24127 Bergamo BG",
     "golCasa": null,
     "golTrasferta": null
   },
@@ -299,6 +303,7 @@
     "golCasa": null,
     "golTrasferta": null
   },
+
   {
     "giornata": "C6",
     "fase": "Coppa",
@@ -359,6 +364,7 @@
     "golCasa": null,
     "golTrasferta": null
   },
+
   {
     "giornata": "C7",
     "fase": "Coppa",
@@ -367,7 +373,7 @@
     "casa": "Pos. 7",
     "trasferta": "Pos. 10",
     "luogo": "Bombonera",
-    "indirizzo": null,
+    "indirizzo": "Via Tommaso Grossi 40, 24127 Bergamo BG",
     "golCasa": null,
     "golTrasferta": null
   },
@@ -419,6 +425,7 @@
     "golCasa": null,
     "golTrasferta": null
   },
+
   {
     "giornata": "C8",
     "fase": "Coppa",
@@ -427,7 +434,7 @@
     "casa": "Pos. 10",
     "trasferta": "Pos. 8",
     "luogo": "Bombonera",
-    "indirizzo": null,
+    "indirizzo": "Via Tommaso Grossi 40, 24127 Bergamo BG",
     "golCasa": null,
     "golTrasferta": null
   },
@@ -479,6 +486,7 @@
     "golCasa": null,
     "golTrasferta": null
   },
+
   {
     "giornata": "C9",
     "fase": "Coppa",
@@ -487,7 +495,7 @@
     "casa": "Pos. 9",
     "trasferta": "Pos. 10",
     "luogo": "Bombonera",
-    "indirizzo": null,
+    "indirizzo": "Via Tommaso Grossi 40, 24127 Bergamo BG",
     "golCasa": null,
     "golTrasferta": null
   },
@@ -539,6 +547,7 @@
     "golCasa": null,
     "golTrasferta": null
   },
+
   {
     "giornata": "SF1",
     "fase": "Finali",
