@@ -12,7 +12,7 @@
     "nome": "Stefano",
     "cognome": "Mazzolin",
     "ruolo": "Portiere",
-    "numero": 12,
+    "numero": 69,
     "descrizione": "",
     "immagine-1": "stefano-mazzolin-1.webp",
     "immagine-2": "stefano-mazzolin-2.webp"
@@ -39,7 +39,7 @@
     "nome": "Matteo",
     "cognome": "Fumagalli",
     "ruolo": "Difensore",
-    "numero": 5,
+    "numero": 13,
     "descrizione": "",
     "immagine-1": "matteo-fumagalli-1.webp",
     "immagine-2": "matteo-fumagalli-2.webp"
@@ -48,7 +48,7 @@
     "nome": "Giorgio",
     "cognome": "Chignoli",
     "ruolo": "Difensore",
-    "numero": 2,
+    "numero": 4,
     "descrizione": "",
     "immagine-1": "giorgio-chignoli-1.webp",
     "immagine-2": "giorgio-chignoli-2.webp"
@@ -57,7 +57,7 @@
     "nome": "Peter",
     "cognome": "Sohna",
     "ruolo": "Difensore",
-    "numero": 3,
+    "numero": 45,
     "descrizione": "",
     "immagine-1": "peter-sohna-1.webp",
     "immagine-2": "peter-sohna-2.webp"
@@ -81,10 +81,19 @@
     "immagine-2": "mattia-gargiuolo-2.webp"
   },
   {
+    "nome": "Stefano",
+    "cognome": "Gennari",
+    "ruolo": "Centrocampista",
+    "numero": 11,
+    "descrizione": "",
+    "immagine-1": "stefano-gennari-1.webp",
+    "immagine-2": "stefano-gennari-2.webp"
+  },
+  {
     "nome": "Yuri",
     "cognome": "Pepe",
     "ruolo": "Centrocampista",
-    "numero": 7,
+    "numero": 8,
     "descrizione": "",
     "immagine-1": "yuri-pepe-1.webp",
     "immagine-2": "yuri-pepe-2.webp"
@@ -93,7 +102,7 @@
     "nome": "Matteo",
     "cognome": "Comelli",
     "ruolo": "Centrocampista",
-    "numero": 8,
+    "numero": 7,
     "descrizione": "",
     "immagine-1": "matteo-comelli-1.webp",
     "immagine-2": "matteo-comelli-2.webp"
@@ -102,7 +111,7 @@
     "nome": "Karim",
     "cognome": "Bouinbi",
     "ruolo": "Centrocampista",
-    "numero": 11,
+    "numero": 10,
     "descrizione": "",
     "immagine-1": "karim-bouinbi-1.webp",
     "immagine-2": "karim-bouinbi-2.webp"
@@ -124,15 +133,6 @@
     "descrizione": "",
     "immagine-1": "alessandro-spinelli-1.webp",
     "immagine-2": "alessandro-spinelli-2.webp"
-  },
-  {
-    "nome": "Stefano",
-    "cognome": "Gennari",
-    "ruolo": "Attaccante",
-    "numero": 10,
-    "descrizione": "",
-    "immagine-1": "stefano-gennari-1.webp",
-    "immagine-2": "stefano-gennari-2.webp"
   },
   {
     "nome": "Zeno",
