@@ -9,8 +9,8 @@
     "trasferta": "FC Real Franuzzi",
     "luogo": "Valtesse",
     "indirizzo": "Via Zarda 1, Bergamo BG",
-    "golCasa": null,
-    "golTrasferta": null
+    "golCasa": 0,
+    "golTrasferta": 1
   },
   {
     "giornata": 2,
