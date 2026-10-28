@@ -1,13 +1,33 @@
 [
   {
     "squadra": "Black Eagles",
-    "giocate": 1,
-    "vittorie": 1,
+    "giocate": 2,
+    "vittorie": 2,
     "pareggi": 0,
     "sconfitte": 0,
-    "golFatti": 5,
+    "golFatti": 11,
+    "golSubiti": 1,
+    "punti": 6
+  },
+  {
+    "squadra": "Galacticos BG",
+    "giocate": 2,
+    "vittorie": 2,
+    "pareggi": 0,
+    "sconfitte": 0,
+    "golFatti": 9,
     "golSubiti": 0,
-    "punti": 3
+    "punti": 6
+  },
+  {
+    "squadra": "FC Real Franuzzi",
+    "giocate": 2,
+    "vittorie": 2,
+    "pareggi": 0,
+    "sconfitte": 0,
+    "golFatti": 4,
+    "golSubiti": 1,
+    "punti": 6
   },
   {
     "squadra": "FC Tribulandia",
@@ -30,36 +50,6 @@
     "punti": 3
   },
   {
-    "squadra": "Galacticos BG",
-    "giocate": 1,
-    "vittorie": 1,
-    "pareggi": 0,
-    "sconfitte": 0,
-    "golFatti": 1,
-    "golSubiti": 0,
-    "punti": 3
-  },
-  {
-    "squadra": "FC Real Franuzzi",
-    "giocate": 1,
-    "vittorie": 1,
-    "pareggi": 0,
-    "sconfitte": 0,
-    "golFatti": 1,
-    "golSubiti": 0,
-    "punti": 3
-  },
-  {
-    "squadra": "Onis Sportswear",
-    "giocate": 0,
-    "vittorie": 0,
-    "pareggi": 0,
-    "sconfitte": 0,
-    "golFatti": 0,
-    "golSubiti": 0,
-    "punti": 0
-  },
-  {
     "squadra": "Trezzano Angels",
     "giocate": 1,
     "vittorie": 0,
@@ -67,16 +57,6 @@
     "sconfitte": 1,
     "golFatti": 2,
     "golSubiti": 3,
-    "punti": 0
-  },
-  {
-    "squadra": "Colpo Alto",
-    "giocate": 1,
-    "vittorie": 0,
-    "pareggi": 0,
-    "sconfitte": 1,
-    "golFatti": 0,
-    "golSubiti": 1,
     "punti": 0
   },
   {
@@ -90,6 +70,16 @@
     "punti": 0
   },
   {
+    "squadra": "Colpo Alto",
+    "giocate": 2,
+    "vittorie": 0,
+    "pareggi": 0,
+    "sconfitte": 2,
+    "golFatti": 1,
+    "golSubiti": 4,
+    "punti": 0
+  },
+  {
     "squadra": "Leoni dell'Atlante",
     "giocate": 1,
     "vittorie": 0,
@@ -100,13 +90,23 @@
     "punti": 0
   },
   {
-    "squadra": "Briganti FC",
+    "squadra": "Onis Sportswear",
     "giocate": 1,
     "vittorie": 0,
     "pareggi": 0,
     "sconfitte": 1,
+    "golFatti": 1,
+    "golSubiti": 6,
+    "punti": 0
+  },
+  {
+    "squadra": "Briganti FC",
+    "giocate": 2,
+    "vittorie": 0,
+    "pareggi": 0,
+    "sconfitte": 2,
     "golFatti": 0,
-    "golSubiti": 5,
+    "golSubiti": 13,
     "punti": 0
   }
 ]

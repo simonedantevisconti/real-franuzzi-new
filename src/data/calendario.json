@@ -22,8 +22,8 @@
     "trasferta": "FC Real Franuzzi",
     "luogo": "Brembate",
     "indirizzo": "Via Oratorio 20, 24041 Brembate BG",
-    "golCasa": null,
-    "golTrasferta": null
+    "golCasa": 1,
+    "golTrasferta": 3
   },
   {
     "giornata": 3,
