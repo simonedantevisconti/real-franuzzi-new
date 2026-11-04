@@ -1,5 +1,15 @@
 [
   {
+    "squadra": "Galacticos BG",
+    "giocate": 3,
+    "vittorie": 3,
+    "pareggi": 0,
+    "sconfitte": 0,
+    "golFatti": 12,
+    "golSubiti": 1,
+    "punti": 9
+  },
+  {
     "squadra": "Black Eagles",
     "giocate": 2,
     "vittorie": 2,
@@ -7,16 +17,6 @@
     "sconfitte": 0,
     "golFatti": 11,
     "golSubiti": 1,
-    "punti": 6
-  },
-  {
-    "squadra": "Galacticos BG",
-    "giocate": 2,
-    "vittorie": 2,
-    "pareggi": 0,
-    "sconfitte": 0,
-    "golFatti": 9,
-    "golSubiti": 0,
     "punti": 6
   },
   {
@@ -30,43 +30,43 @@
     "punti": 6
   },
   {
-    "squadra": "FC Tribulandia",
-    "giocate": 1,
-    "vittorie": 1,
+    "squadra": "Inzago Calcio a 8",
+    "giocate": 2,
+    "vittorie": 2,
     "pareggi": 0,
     "sconfitte": 0,
-    "golFatti": 4,
-    "golSubiti": 0,
+    "golFatti": 6,
+    "golSubiti": 4,
+    "punti": 6
+  },
+  {
+    "squadra": "FC Tribulandia",
+    "giocate": 2,
+    "vittorie": 1,
+    "pareggi": 0,
+    "sconfitte": 1,
+    "golFatti": 6,
+    "golSubiti": 3,
     "punti": 3
   },
   {
-    "squadra": "Inzago Calcio a 8",
-    "giocate": 1,
+    "squadra": "Fury SC Bergamo",
+    "giocate": 2,
     "vittorie": 1,
     "pareggi": 0,
-    "sconfitte": 0,
+    "sconfitte": 1,
     "golFatti": 3,
     "golSubiti": 2,
     "punti": 3
   },
   {
     "squadra": "Trezzano Angels",
-    "giocate": 1,
+    "giocate": 2,
     "vittorie": 0,
     "pareggi": 0,
-    "sconfitte": 1,
-    "golFatti": 2,
-    "golSubiti": 3,
-    "punti": 0
-  },
-  {
-    "squadra": "Fury SC Bergamo",
-    "giocate": 1,
-    "vittorie": 0,
-    "pareggi": 0,
-    "sconfitte": 1,
-    "golFatti": 0,
-    "golSubiti": 1,
+    "sconfitte": 2,
+    "golFatti": 3,
+    "golSubiti": 6,
     "punti": 0
   },
   {
@@ -80,16 +80,6 @@
     "punti": 0
   },
   {
-    "squadra": "Leoni dell'Atlante",
-    "giocate": 1,
-    "vittorie": 0,
-    "pareggi": 0,
-    "sconfitte": 1,
-    "golFatti": 0,
-    "golSubiti": 4,
-    "punti": 0
-  },
-  {
     "squadra": "Onis Sportswear",
     "giocate": 1,
     "vittorie": 0,
@@ -97,6 +87,16 @@
     "sconfitte": 1,
     "golFatti": 1,
     "golSubiti": 6,
+    "punti": 0
+  },
+  {
+    "squadra": "Leoni dell'Atlante",
+    "giocate": 2,
+    "vittorie": 0,
+    "pareggi": 0,
+    "sconfitte": 2,
+    "golFatti": 1,
+    "golSubiti": 7,
     "punti": 0
   },
   {
