@@ -1,34 +1,22 @@
 .site-footer {
   position: relative;
-
   padding: 60px 0 25px;
-
   background: #050608;
-
   border-top: 1px solid var(--color-border);
-
   overflow: hidden;
 }
 
 .site-footer::before {
   content: "";
-
   position: absolute;
-
   width: 500px;
   height: 300px;
-
   left: 50%;
   bottom: -220px;
-
   transform: translateX(-50%);
-
   background: var(--color-blue);
-
   filter: blur(150px);
-
   opacity: 0.18;
-
   pointer-events: none;
 }
 
@@ -37,15 +25,12 @@
 .footer-heading {
   position: relative;
   z-index: 1;
-
   margin-bottom: 40px;
-
   text-align: center;
 }
 
 .footer-heading span {
   color: var(--color-yellow);
-
   font-family: var(--font-heading);
   font-size: 0.78rem;
   font-weight: 700;
@@ -54,9 +39,7 @@
 
 .footer-heading p {
   margin: 6px 0 0;
-
   color: var(--color-text-muted);
-
   font-size: 0.9rem;
 }
 
@@ -65,27 +48,51 @@
 .footer-partners {
   position: relative;
   z-index: 1;
-
   width: 100%;
-  max-width: 850px;
-
+  max-width: 950px;
   margin: 0 auto;
 }
 
-/* MAIN SPONSOR */
+/* GENERAL PARTNER */
+
+.footer-partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 110px;
+  opacity: 0.75;
+  transition:
+    opacity var(--transition-normal),
+    transform var(--transition-normal),
+    filter var(--transition-normal);
+}
+
+.footer-partner:hover {
+  opacity: 1;
+  transform: translateY(-6px);
+  filter: drop-shadow(0 8px 20px rgba(255, 255, 255, 0.1));
+}
+
+.footer-partner img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* MAIN SPONSOR - GOLDBET */
 
 .footer-main-sponsor {
   display: flex;
   justify-content: center;
-
   width: 100%;
-
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .footer-partner-goldbet {
   width: 100%;
-
   min-height: 150px;
 }
 
@@ -98,52 +105,19 @@
 
 .footer-secondary-partners {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   align-items: center;
-
+  justify-items: center;
   gap: 30px;
-
   width: 100%;
 }
 
-.footer-partner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+.footer-secondary-partners .footer-partner {
+  width: 100%;
   min-height: 110px;
-
-  opacity: 0.75;
-
-  transition:
-    opacity var(--transition-normal),
-    transform var(--transition-normal),
-    filter var(--transition-normal);
-}
-
-.footer-partner:hover {
-  opacity: 1;
-
-  transform: translateY(-6px);
-
-  filter: drop-shadow(0 8px 20px rgba(255, 255, 255, 0.1));
-}
-
-.footer-partner img {
-  display: block;
-
-  width: auto;
-  height: auto;
-
-  object-fit: contain;
 }
 
 /* LEGA */
-
-.footer-partner-league {
-  justify-content: flex-start;
-}
 
 .footer-partner-league img {
   max-width: 110px;
@@ -152,13 +126,23 @@
 
 /* E-RENT */
 
-.footer-partner-erent {
-  justify-content: flex-end;
-}
-
 .footer-partner-erent img {
   max-width: 180px;
   max-height: 90px;
+}
+
+/* PIZZA CLUB */
+
+.footer-partner-pizzaclub img {
+  max-width: 160px;
+  max-height: 95px;
+}
+
+/* SPACCANAPOLI 187 */
+
+.footer-partner-spaccanapoli img {
+  max-width: 160px;
+  max-height: 95px;
 }
 
 /* FOOTER BOTTOM */
@@ -166,22 +150,41 @@
 .footer-bottom {
   position: relative;
   z-index: 1;
-
   display: flex;
   justify-content: space-between;
-
   margin-top: 45px;
   padding-top: 20px;
-
   border-top: 1px solid var(--color-border);
-
   color: var(--color-text-muted);
-
   font-size: 0.78rem;
 }
 
 .footer-bottom p {
   margin: 0;
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+  .footer-secondary-partners {
+    gap: 20px;
+  }
+
+  .footer-partner-league img {
+    max-width: 95px;
+    max-height: 80px;
+  }
+
+  .footer-partner-erent img {
+    max-width: 145px;
+    max-height: 80px;
+  }
+
+  .footer-partner-pizzaclub img,
+  .footer-partner-spaccanapoli img {
+    max-width: 135px;
+    max-height: 80px;
+  }
 }
 
 /* MOBILE */
@@ -210,16 +213,11 @@
 
   .footer-secondary-partners {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-
     gap: 18px;
   }
 
-  .footer-partner {
+  .footer-secondary-partners .footer-partner {
     min-height: 90px;
-  }
-
-  .footer-partner-league {
-    justify-content: flex-start;
   }
 
   .footer-partner-league img {
@@ -227,21 +225,25 @@
     max-height: 75px;
   }
 
-  .footer-partner-erent {
-    justify-content: flex-end;
-  }
-
   .footer-partner-erent img {
     max-width: 135px;
+    max-height: 75px;
+  }
+
+  .footer-partner-pizzaclub img {
+    max-width: 125px;
+    max-height: 75px;
+  }
+
+  .footer-partner-spaccanapoli img {
+    max-width: 125px;
     max-height: 75px;
   }
 
   .footer-bottom {
     flex-direction: column;
     align-items: center;
-
     gap: 8px;
-
     text-align: center;
   }
 }
