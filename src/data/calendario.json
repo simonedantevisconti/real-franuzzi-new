@@ -35,8 +35,8 @@
     "trasferta": "Inzago Calcio a 8",
     "luogo": "Cassinone",
     "indirizzo": "Via Colombaia, 24068 Cassinone BG",
-    "golCasa": null,
-    "golTrasferta": null
+    "golCasa": 0,
+    "golTrasferta": 2
   },
   {
     "giornata": 4,
